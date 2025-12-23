@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@tailwind utilities;
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+@theme {
+
+    /* Background Color */
+    --color-bg-white: #FFFFFF;
+    --color-bg-primary: #163153;
+    --color-bg-secondary: #1877F2;
+
+    /* Text Color */
+    --color-text-white: #FFFFFF;
+    --color-text-primary: #1C1C1C;
+    --color-text-secondary: #7C7575;
+    --color-text-blue: #1877F2;
+
+}
+
+@layer utilities {
+    .container {
+        /* Center the container */
+        margin-left: auto;
+        margin-right: auto;
+
+        /* Apply padding */
+        padding-left: 24px;
+        padding-right: 24px;
+
+        /* Apply custom breakpoints */
+        width: 100%;
+        max-width: 1170px;
+        /* Apply 1170px max-width on large screens */
+    }
+
+    /* Custom breakpoints */
+    @media (min-width: 600px) {
+        .container {
+            max-width: 1024px;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+    }
+
+    @media (min-width: 1170px) {
+        .container {
+            max-width: 1170px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+
+    @media (min-width: 1240px) {
+        .container {
+            max-width: 1170px;
+        }
+    }
+
+    @media (min-width: 1496px) {
+        .container {
+            max-width: 1170px;
+        }
+    }
+}
+
+
+@keyframes slide-left {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.5s ease-out;
+
+}
+
+.animate-slide-left {
+    animation: slide-left 0.5s ease-out;
+}
+
+.animate-slide-right {
+    animation: slide-right 0.5s ease-out;
+}

@@ -30,9 +30,9 @@ const Navbar = () => {
                 </div>
 
                 {/* Desktop SignUp Button */}
-                <button className="bg-[#1877f2] box-border content-stretch hidden lg:flex gap-4 items-center justify-center px-6 py-3 md:px-[34px] md:py-4 relative rounded-[48px] shrink-0 w-fit transition-all duration-300 ease-out
+                <button className="bg-[#1877f2] box-border hidden lg:flex gap-4 items-center justify-center px-6 py-3 md:px-[34px] md:py-[15px] relative rounded-[48px] w-fit transition-all duration-300 ease-out
     hover:scale-[1.04] hover:shadow-lg hover:bg-[#1b6de8] cursor-pointer border-[1.42px] border-solid border-white shadow-[0px_4px_14px_0px_rgba(0,0,0,0.25)]">
-                    <span className="font-semibold leading-normal relative shrink-0 text-sm sm:text-base text-nowrap text-white whitespace-pre">
+                    <span className="font-semibold leading-normal relative text-sm sm:text-base text-nowrap text-white whitespace-pre">
                         Sign Up
                     </span>
                 </button>
@@ -66,9 +66,9 @@ const Navbar = () => {
                     </div>
 
                     {/* SignUp Button (Mobile) */}
-                    <button className="bg-[#1877f2] box-border content-stretch flex gap-4 items-center justify-center px-6 py-3 md:px-[34px] md:py-4 relative rounded-[48px] shrink-0 w-fit transition-all duration-300 ease-out
+                    <button className="bg-[#1877f2] box-border content-stretch flex gap-4 items-center justify-center px-6 py-3 md:px-[34px] md:py-4 relative rounded-[48px] w-fit transition-all duration-300 ease-out
     hover:scale-[1.04] hover:shadow-lg hover:bg-[#1b6de8] cursor-pointer border-[1.42px] border-solid border-white shadow-[0px_4px_14px_0px_rgba(0,0,0,0.25)]">
-                        <span className="font-semibold leading-normal relative shrink-0 text-sm sm:text-base text-nowrap text-white whitespace-pre">
+                        <span className="font-semibold leading-normal relative text-sm sm:text-base text-nowrap text-white whitespace-pre">
                             Sign Up
                         </span>
                     </button>

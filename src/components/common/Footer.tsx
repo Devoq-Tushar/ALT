@@ -12,7 +12,7 @@ const Footer = () => {
                         </div>
                         <div className="content-stretch flex flex-wrap  items-start justify-between gap-6 md:gap-6 min-h-px w-full max-w-[864px] relative">
                             <div className="content-stretch flex flex-col gap-5 sm:gap-7 items-start relative shrink-0 max-w-[40%] sm:w-fit">
-                                <p className="font-semibold leading-normal relative shrink-0 text-[18px] lg:text-[20px] text-center text-white">Company</p>
+                                <p className="font-semibold leading-normal relative text-[20px] text-center text-white">Company</p>
                                 <div className="content-stretch flex flex-col font-normal gap-3 items-start leading-normal relative shrink-0 text-[14px] lg:text-[16px] text-white">
                                     <p className="relative shrink-0">Home</p>
                                     <p className="relative shrink-0">About Us</p>
@@ -20,7 +20,7 @@ const Footer = () => {
                                 </div>
                             </div>
                             <div className="content-stretch flex flex-col gap-5 sm:gap-7 items-start relative shrink-0 w-[50%] sm:w-fit">
-                                <p className="font-semibold leading-normal relative shrink-0 text-[18px] lg:text-[20px] text-center text-white">Services</p>
+                                <p className="font-semibold leading-normal relative text-[20px] text-center text-white">Services</p>
                                 <div className="content-stretch flex flex-col font-normal gap-3 items-start leading-normal relative shrink-0 text-[14px] lg:text-[16px] text-white">
                                     <p className="relative shrink-0">Banking HHI</p>
                                     <p className="relative shrink-0">Insurance HHI</p>
@@ -28,14 +28,14 @@ const Footer = () => {
                                 </div>
                             </div>
                             <div className="content-stretch flex flex-col gap-5 sm:gap-7 items-start relative shrink-0 w-[40%] sm:w-fit">
-                                <p className="font-semibold leading-normal relative shrink-0 text-[18px] lg:text-[20px] text-center text-white">Support</p>
+                                <p className="font-semibold leading-normal relative text-[20px] text-center text-white">Support</p>
                                 <div className="content-stretch flex flex-col font-normal gap-3 items-start leading-normal relative shrink-0 text-[14px] lg:text-[16px] text-white">
                                     <p className="relative shrink-0">Contact Us</p>
                                     <p className="relative shrink-0">Help Center</p>
                                 </div>
                             </div>
                             <div className="content-stretch flex flex-col gap-5 sm:gap-7 items-start relative shrink-0 w-[50%] sm:w-fit">
-                                <p className="font-semibold leading-normal relative shrink-0 text-[18px] lg:text-[20px] text-center text-white">Contact Us</p>
+                                <p className="font-semibold leading-normal relative text-[20px] text-center text-white">Contact Us</p>
                                 <div className="content-stretch flex flex-col gap-4 items-start relative shrink-0">
                                     <div className="content-stretch flex gap-3 items-center relative shrink-0">
                                         <img src="assets/icons/sms.svg" alt="" className="w-4 h-4 sm:w-5 sm:h-5" />

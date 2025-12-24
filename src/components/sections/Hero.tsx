@@ -1,6 +1,6 @@
 const Hero = () => {
     return (
-        <section className="relative overflow-hidden bg-[url('assets/images/hero-bg-img.png')] bg-no-repeat bg-bottom bg-size-[100%]">
+        <section className="relative overflow-hidden bg-[url('/assets/images/hero-bg-img.png')] bg-no-repeat bg-bottom bg-size-[100%]">
 
             {/* Glow image left */}
             <div className="absolute top-0 left-0 h-[250px] w-[250px] sm:h-[690px] sm:w-[610px] z-1">
@@ -48,36 +48,31 @@ const Hero = () => {
                 </div>
 
 
-                <div className="hidden xl:flex absolute h-[226.135px] items-center justify-center -left-20 top-[173px] translate-y-[-50%] w-[200.178px]">
-                    <div className="flex-none rotate-350">
-                        <div className="bg-white box-border content-stretch flex flex-col gap-[30px] items-start p-6 relative rounded-[20px]">
-                            <div aria-hidden="true" className="absolute border-4 border-[rgba(24,119,242,0.1)] border-solid -inset-1 pointer-events-none rounded-3xl" />
-                            <div className="content-stretch flex flex-col gap-1 items-start leading-normal relative shrink-0 text-center text-nowrap whitespace-pre">
-                                <p className="font-semibold relative shrink-0 text-[#1c1c1c] text-[24px] uppercase">12,500+</p>
-                                <p className="font-normal relative shrink-0 text-[#7c7575] text-[16px]">Verified Funds</p>
-                            </div>
-                            <img src="assets/images/Verified-Funds-chart-img.svg" alt="" />
-
+                {/* <div className="hidden xl:flex absolute rotate-350 h-[200px] items-center justify-center left-[-45px] top-[180px] translate-y-[-50%] w-[168px]">
+                    <div className="bg-white box-border flex flex-col justify-center gap-[30px] items-start p-6 relative rounded-[20px] border-4 border-[rgba(24,119,242,0.1)] border-solid">
+                        <div className="flex flex-col gap-1 items-start leading-normal relative shrink-0 text-center text-nowrap whitespace-pre">
+                            <span className="font-semibold relative shrink-0 text-[#1c1c1c] text-[24px] uppercase leading-9">12,500+</span>
+                            <p className="font-normal relative shrink-0 text-[#7c7575] text-[16px] leading-6">Verified Funds</p>
                         </div>
+                        <img src="assets/images/Verified-Funds-chart-img.svg" alt="" />
                     </div>
-                </div>
+                </div> */}
+                <img src="assets/images/hero-graphics-img-1.svg" alt="" className="hidden xl:flex absolute left-[-45px] top-[180px] translate-y-[-50%] w-[168px] h-[200px]" />
 
-                <div className="hidden xl:flex absolute h-[219.409px] items-center justify-center right-[-80.55px] top-[173px] translate-y-[-50%] w-[198.991px]">
-                    <div className="flex-none rotate-10">
-                        <div className="bg-white box-border content-stretch flex flex-col gap-[30px] items-start p-6 relative rounded-[20px] w-[168px]">
-                            <div aria-hidden="true" className="absolute border-4 border-[rgba(24,119,242,0.1)] border-solid -inset-1 pointer-events-none rounded-3xl" />
-                            <div className="content-stretch flex flex-col gap-1 items-start leading-normal relative shrink-0 text-center text-nowrap whitespace-pre">
-                                <p className="font-semibold relative shrink-0 text-[#1c1c1c] text-[24px] uppercase">85,000+</p>
-                                <p className="font-normal relative shrink-0 text-[#7c7575] text-[16px]">Global Deals</p>
-                            </div>
-                            <div className="h-[51.171px] relative shrink-0 w-[120px]" data-name="Small line chart widget">
-                                <div className="absolute inset-[-8.93%_-1.06%_-1.84%_-0.06%]">
-                                    <img src="assets/images/Global-Deals-chart-img.svg" alt="" />
-                                </div>
+                <img src="assets/images/hero-graphics-img-2.svg" alt="" className="hidden xl:flex absolute rotate-0 h-[193px] right-[-45px] top-[180px] translate-y-[-50%] w-[168px]" />
+                {/* <div className="hidden xl:flex absolute rotate-10 h-[193px] items-center justify-center right-[-45px] top-[180px] translate-y-[-50%] w-[168px]">
+                    <div className="bg-white box-border flex flex-col gap-[30px] items-start p-6 relative rounded-[20px] border-4 border-[rgba(24,119,242,0.1)] border-solid">
+                        <div className="content-stretch flex flex-col gap-1 items-start leading-normal relative shrink-0 text-center text-nowrap whitespace-pre">
+                            <p className="font-semibold relative shrink-0 text-[#1c1c1c] text-[24px] uppercase">85,000+</p>
+                            <p className="font-normal relative shrink-0 text-[#7c7575] text-[16px]">Global Deals</p>
+                        </div>
+                        <div className="h-[51.171px] relative shrink-0 w-[120px]" data-name="Small line chart widget">
+                            <div className="absolute inset-[-8.93%_-1.06%_-1.84%_-0.06%]">
+                                <img src="assets/images/Global-Deals-chart-img.svg" alt="" />
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     )

@@ -4,7 +4,7 @@ import WhatWeSolve from "../components/sections/WhatWeSolve";
 import HowWeDoIt from "../components/sections/HowWeDoIt";
 import StartWithALT from "../components/sections/StartWithALT";
 
-export default function What_We_Offer() {
+export default function Home() {
     return (
         <>
             <Hero />

@@ -2,6 +2,7 @@ import { useState } from "react";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [hhiOpen, setHhiOpen] = useState(false);
 
     return (
         <nav className="sticky top-0 z-50 bg-white shadow-[0px_4px_14px_rgba(0,0,0,0.05)]">
@@ -19,12 +20,34 @@ const Navbar = () => {
                         <a href="#" className="text-text-primary font-medium hover:text-text-blue transition-colors duration-200 text-[14px] whitespace-nowrap">Why Alt?</a>
                         <a href="#" className="text-text-primary font-medium hover:text-text-blue transition-colors duration-200 text-[14px] whitespace-nowrap">About Us</a>
                         <a href="#contact-us" className="text-text-primary font-medium hover:text-text-blue transition-colors duration-200 text-[14px] whitespace-nowrap">Contact</a>
-
-                        <div className="flex gap-1 items-center cursor-pointer">
-                            <a href="#" className="text-text-primary font-medium hover:text-text-blue transition-colors duration-200 text-[14px] whitespace-nowrap">
-                                HHI Benchmarks
-                            </a>
-                            <img src="assets/icons/Huge-icon.svg" alt="" />
+                        <div className="relative group">
+                            <div className="flex gap-1 items-center cursor-pointer">
+                                <span className="text-text-primary font-medium hover:text-text-blue transition-colors duration-200 text-[14px] whitespace-nowrap">
+                                    HHI Benchmarks
+                                </span>
+                                <img src="assets/icons/Huge-icon.svg" alt="" />
+                            </div>
+                            <div className="absolute right-0 top-full mt-3 w-44 bg-white rounded-lg shadow-lg opacity-0 invisible
+                                            group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50
+                            ">
+                                <ul className="py-2">
+                                    <li>
+                                        <a href="#" className="block px-4 py-2 text-sm hover:bg-gray-100">
+                                            Banking
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" className="block px-4 py-2 text-sm hover:bg-gray-100">
+                                            Telecom
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/#" className="block px-4 py-2 text-sm hover:bg-gray-100">
+                                            Insurance
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -60,10 +83,21 @@ const Navbar = () => {
                     <a href="#" className="text-text-primary font-medium text-[16px]">About Us</a>
                     <a href="#contact-us" className="text-text-primary font-medium text-[16px]">Contact</a>
 
-                    <div className="flex gap-2 items-center cursor-pointer">
-                        <a href="#" className="text-text-primary font-medium text-[16px]">HHI Benchmarks</a>
-                        <img src="assets/icons/Huge-icon.svg" alt="" />
-                    </div>
+                    <button
+                        onClick={() => setHhiOpen(!hhiOpen)}
+                        className="flex items-center justify-between text-text-primary font-medium text-[16px]"
+                    >
+                        <span>HHI Benchmarks</span>
+                        <img src="assets/icons/Huge-icon.svg" alt="" className={`transition-transform ${hhiOpen ? "rotate-180" : ""}`} />
+                    </button>
+
+                    {hhiOpen && (
+                        <div className="pl-2 flex flex-col gap-3">
+                            <a href="#" className="text-sm text-text-primary">Banking</a>
+                            <a href="#" className="text-sm text-text-primary">Telecom</a>
+                            <a href="#" className="text-sm text-text-primary">Insurance</a>
+                        </div>
+                    )}
 
                     {/* SignUp Button (Mobile) */}
                     <button className="bg-[#1877f2] box-border content-stretch flex gap-4 items-center justify-center px-6 py-3 md:px-[34px] md:py-4 relative rounded-[48px] w-fit transition-all duration-300 ease-out

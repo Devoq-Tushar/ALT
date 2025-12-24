@@ -177,7 +177,7 @@ const WhatWeOffer = () => {
                                     >
                                         <button
                                             onClick={() => toggle(faq.id)}
-                                            className={`w-full flex items-center justify-between ${isOpen ? "md:py-6 md:pb-4 py-4 pb-3" : "md:py-6 py-4"} text-left`}
+                                            className={`w-full flex items-center justify-between cursor-pointer ${isOpen ? "md:py-6 md:pb-4 py-4 pb-3" : "md:py-6 py-4"} text-left`}
                                         >
                                             <h3 className="text-lg md:text-2xl font-semibold text-text-primary md:leading-8 leading-[27px]">{faq.title}</h3>
                                             <span className="w-6 h-6 md:w-7 md:h-7 pt-0.5 flex items-center justify-center rounded-full bg-bg-secondary text-white">
@@ -222,25 +222,6 @@ const WhatWeOffer = () => {
                                                             </p>
                                                         )}
 
-                                                        {/* {faq.points && (
-                                                        <ul className="space-y-3.5">
-                                                            {faq.points.map((point, idx) => (
-                                                                <li
-                                                                    key={idx}
-                                                                    className="flex items-center gap-3 bg-gray-100 rounded-xl p-2.5"
-                                                                >
-                                                                    <img
-                                                                        src="assets/icons/icn-check.svg"
-                                                                        alt=""
-                                                                        className="w-5 h-5"
-                                                                    />
-                                                                    <span className="font-medium text-sm text-text-secondary leading-[21px]">
-                                                                        {point}
-                                                                    </span>
-                                                                </li>
-                                                            ))}
-                                                        </ul>
-                                                    )} */}
                                                         {faq.points && (
                                                             <ul className="space-y-3.5">
                                                                 {faq.points.map((point, idx) => {
@@ -249,11 +230,11 @@ const WhatWeOffer = () => {
 
                                                                     if (isFirstDropdown) {
                                                                         return (
-                                                                            <li key={idx}>
+                                                                            <li key={idx} className="cursor-pointer">
                                                                                 {/* DROPDOWN HEADER */}
                                                                                 <button
                                                                                     onClick={() => setOpenSubPoint(v => !v)}
-                                                                                    className="w-full flex items-center justify-between gap-2 md:gap-3 bg-gray-100 rounded-full p-2 md:p-[10.5px]"
+                                                                                    className="w-full flex items-center justify-between gap-2 md:gap-3 bg-gray-100 rounded-full p-2 md:p-[10.5px] cursor-pointer"
                                                                                 >
                                                                                     <div className="flex items-center gap-2 md:gap-3">
                                                                                         <img

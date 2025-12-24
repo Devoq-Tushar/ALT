@@ -9,7 +9,7 @@ const Navbar = () => {
             <div className="container flex items-center justify-between py-4 md:py-6">
 
                 {/* Logo */}
-                <a href="#">
+                <a href="" onClick={() => window.location.reload()}>
                     <img src="assets/Logo/alt-logo.svg" alt="" className="w-full md:h-full h-5" />
                 </a>
                 {/* Desktop Menu */}

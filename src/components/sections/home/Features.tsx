@@ -7,7 +7,9 @@ const Features: React.FC = () => {
     const [altModal, setAltModal] = useState<boolean>(false)
     const [aptlyModal, setAptlyModal] = useState<boolean>(false)
     const [transparentModal, setTransparentModal] = useState<boolean>(false)
-
+    console.log(altModal);
+    console.log(aptlyModal);
+    console.log(transparentModal);
     return (
         <section
             id="why-alt"

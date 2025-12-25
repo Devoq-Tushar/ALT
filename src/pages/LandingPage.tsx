@@ -1,8 +1,8 @@
-import Hero from "../components/sections/Hero";
-import WhatWeOffer from "../components/sections/WhatWeOffer";
-import WhatWeSolve from "../components/sections/WhatWeSolve";
-import HowWeDoIt from "../components/sections/HowWeDoIt";
-import StartWithALT from "../components/sections/StartWithALT";
+import Hero from "../components/sections/what-we-offer/Hero";
+import WhatWeOffer from "../components/sections/what-we-offer/WhatWeOffer";
+import WhatWeSolve from "../components/sections/what-we-offer/WhatWeSolve";
+import HowWeDoIt from "../components/sections/what-we-offer/HowWeDoIt";
+import StartWithALT from "../components/sections/what-we-offer/StartWithALT";
 
 export default function What_We_Offer() {
     return (

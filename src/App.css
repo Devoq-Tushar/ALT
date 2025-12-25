@@ -16,6 +16,7 @@ body {
 
 @theme {
 
+    /*--------------------------- What we offer theme colors ---------------------------*/
     /* Background Color */
     --color-bg-white: #FFFFFF;
     --color-bg-primary: #163153;
@@ -23,6 +24,17 @@ body {
 
     /* Text Color */
     --color-text-white: #FFFFFF;
+    --color-text-primary: #1C1C1C;
+    --color-text-secondary: #7C7575;
+    --color-text-blue: #1877F2;
+
+    /*--------------------------- Home theme colors ---------------------------*/
+    /* Background Color */
+    --color-home-primary: #1F2432;
+    --color-bg-turnary: #5172E733;
+
+    /* Text Color */
+    --color-text-gray: #FFFFFFB3;
     --color-text-primary: #1C1C1C;
     --color-text-secondary: #7C7575;
     --color-text-blue: #1877F2;
@@ -123,4 +135,40 @@ body {
 
 .animate-slide-right {
     animation: slide-right 0.5s ease-out;
+}
+
+
+
+.df-container .df-bg {
+    background: #F2F4FA !important;
+    border-radius: 16px;
+}
+
+.ytmCuedOverlayPlayButton {
+    display: none !important;
+}
+
+/* @media (max-width: 767px) {
+
+    .df-page .df-page-content,
+    canvas,
+    .df-sheet.df-right-side {
+        height: 208px !important;
+    }
+} */
+
+@media (max-width: 767px) {
+    /* .testimonial .slick-slide {
+        width: 100% !important;
+        max-width: 327px !important;
+        height: 487px !important;
+    } */
+
+    .slick-list {
+        /* min-height: 400px !important; */
+    }
+}
+
+.slick-dots {
+    display: none !important;
 }

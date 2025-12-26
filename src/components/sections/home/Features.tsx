@@ -70,8 +70,7 @@ const Features: React.FC = () => {
                             src="assets/icons/arrow-up-right.svg"
                             alt="Why Alt?"
                             loading="lazy"
-                            className="transition-all duration-2000 group-hover:translate-x-1 w-[19.91px] h-5 md:w-[25px] md:h-[25.11px]"
-                        />
+                            className="transition-all duration-2000 group-hover:translate-x-1 w-[19.91px] h-5 md:w-[25px] md:h-[25.11px]" />
                     </div>
                 </div>
 
@@ -93,6 +92,7 @@ const Features: React.FC = () => {
                                 </label>
                                 <img
                                     src="assets/icons/arrow-up-right.svg"
+                                    alt="Aptly Aligned?"
                                     className="transition-all duration-2000 group-hover:translate-x-1 w-[19.91px] h-5 md:w-[25px] md:h-[25.11px]"
                                 />
                             </div>
@@ -112,6 +112,7 @@ const Features: React.FC = () => {
                                 </label>
                                 <img
                                     src="assets/icons/arrow-up-right.svg"
+                                    alt="Comprehensive Insights?"
                                     className="transition-all duration-2000 group-hover:translate-x-1 -ml-6 w-[19.91px] h-5 md:w-[25px] md:h-[25.11px]"
                                 />
                             </div>
@@ -132,6 +133,7 @@ const Features: React.FC = () => {
                             </label>
                             <img
                                 src="assets/icons/arrow-up-right.svg"
+                                alt="Transparent Performance Metrics"
                                 className="transition-all duration-2000 group-hover:translate-x-1 w-[19.91px] h-5 md:w-[25px] md:h-[25.11px]"
                             />
                         </div>

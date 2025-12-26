@@ -1,9 +1,7 @@
 const Hero = () => {
     return (
-        <section className="relative overflow-hidden bg-home-primary">
-
-
-            <div className="relative w-full flex flex-col lg:flex-row justify-between gap-6 md:gap-4 items-center lg:items-start p-6 pt-8 pb-10 md:py-[43px] container max-w-[1257px]! mr-12! min-[1440px]:ml-[10.14%]! z-10">
+        <section className="relative overflow-hidden bg-home-primary w-full flex justify-center">
+            <div className="relative w-full flex flex-col lg:flex-row justify-between gap-6 md:gap-4 items-center lg:items-start p-6 pt-8 pb-10 md:py-[43px] container max-w-[1257px]! min-[1200px]:ml-[135px]! min-[1200px]:mr-[48px]! z-10">
                 <div className="flex flex-col gap-8 md:gap-[60px] w-full max-w-[670px]">
                     <div className="flex flex-col gap-6 md:gap-8">
                         <div className="flex flex-col gap-4 md:gap-5">
@@ -51,7 +49,7 @@ const Hero = () => {
                         </span>
 
                         {/* CARD 1 */}
-                        <div className="bg-white/10 rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.15)] p-[14px] md:py-[17px] md:px-[22px] flex flex-row justify-between gap-0 md:gap-6">
+                        <div className="bg-white/10 rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.15)] p-3.5 md:py-[17px] md:px-[22px] flex flex-row justify-between gap-0 md:gap-6">
                             {/* Left */}
                             <div className="flex flex-col justify-between">
                                 <div className="flex  justify-start items-center gap-[11px]">
@@ -127,7 +125,7 @@ const Hero = () => {
                         </div>
 
                         {/* CARD 3 */}
-                        <div className="bg-white/10 rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.15)] p-[14px] md:py-[17px] md:px-[22px] flex flex-row justify-between gap-0 md:gap-6">
+                        <div className="bg-white/10 rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.15)] p-3.5 md:py-[17px] md:px-[22px] flex flex-row justify-between gap-0 md:gap-6">
                             {/* Left */}
                             <div className="flex flex-col justify-between">
                                 <div className="flex  justify-start items-center gap-[11px]">

@@ -21,7 +21,7 @@ const HowItWorks: React.FC = () => {
                             {/* Step 1 */}
                             <li className="flex items-center gap-4 border-b border-[#F0F0F0] py-4 md:py-6 first:pt-0 last:border-none last:pb-0">
                                 <div className="w-[70px] h-[54px] md:min-w-16 md:w-16 md:h-16 rounded-full bg-[#B5E4CA] flex items-center justify-center">
-                                    <img src="assets/icons/mouse.svg" alt="company" loading="lazy" className="w-auto h-[20px] md:h-auto" />
+                                    <img src="assets/icons/mouse.svg" alt="company" loading="lazy" className="w-auto h-5 md:h-auto" />
                                 </div>
                                 <div className="flex flex-col gap-0.5">
                                     <h3 className="text-black font-semibold text-sm md:text-base leading-normal">
@@ -36,7 +36,7 @@ const HowItWorks: React.FC = () => {
                             {/* Step 2 */}
                             <li className="flex gap-4 border-b border-[#F0F0F0] py-4 md:py-6 last:border-none">
                                 <div className="w-[70px] h-[54px] md:min-w-16 md:w-16 md:h-16 rounded-full bg-[#FFBC99] flex items-center justify-center">
-                                    <img src="assets/icons/Craft.svg" alt="company" loading="lazy" className="w-auto h-[20px] md:h-auto" />
+                                    <img src="assets/icons/Craft.svg" alt="company" loading="lazy" className="w-auto h-5 md:h-auto" />
                                 </div>
                                 <div className="flex flex-col gap-0.5">
                                     <h3 className="text-black font-semibold text-sm md:text-base leading-normal">
@@ -51,7 +51,7 @@ const HowItWorks: React.FC = () => {
                             {/* Step 3 */}
                             <li className="flex gap-4 md:py-6 py-4 pb-0">
                                 <div className="w-[70px] h-[54px] md:min-w-16 md:w-16 md:h-16 rounded-full bg-[#CABDFF] flex items-center justify-center">
-                                    <img src="assets/icons/Share.svg" alt="company" loading="lazy" className="w-auto h-[20px] md:h-auto" />
+                                    <img src="assets/icons/Share.svg" alt="company" loading="lazy" className="w-auto h-5 md:h-auto" />
 
                                 </div>
                                 <div className="flex flex-col gap-0.5">

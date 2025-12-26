@@ -67,6 +67,36 @@ const Insights = () => {
                 <div className="w-full lg:max-w-[770px] max-w-full insights">
                     <Slider {...settings} className="insights-slider">
 
+
+
+                        {/* CARD 2 */}
+                        <div className="px-2 lg:pl-[30px] lg:px-0">
+                            <div className="flex flex-col rounded-xl bg-white h-full">
+                                <img
+                                    src="assets/images/alt-EsCommerce-2.png"
+                                    alt=""
+                                    loading="lazy"
+                                    className="rounded-t-xl md:h-auto h-[260px]"
+                                />
+                                <div className="flex flex-col gap-3.5 md:gap-4 p-4 md:p-5">
+                                    <span className="text-black text-sm sm:text-[15px] leading-[21px] md:leading-[22px]">
+                                        If we are notified that any User Content infringes another’s intellectual property rights, we may remove such User Content pursuant to the DMCA. In accordance with the DMCA, we have a repeat infringer policy.
+                                    </span>
+
+                                    <div className="flex justify-between items-center">
+                                        <div className="flex gap-3 items-center">
+                                            <img src="assets/icons/alt-user-icn.svg" alt="" className="w-auto h-[42px] md:h-auto" />
+                                            <div>
+                                                <span className="block font-semibold text-sm">EsCommerce</span>
+                                                <span className="text-black/60 text-xs">21/06/2024</span>
+                                            </div>
+                                        </div>
+                                        <img src="assets/icons/alt-linkedin.svg" alt="" className="w-auto h-[22px] md:h-auto" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         {/* CARD 1 */}
                         <div className="px-2 lg:pl-[30px] lg:px-0">
                             <div className="flex flex-col rounded-xl bg-white h-full">
@@ -110,6 +140,8 @@ const Insights = () => {
                             </div>
                         </div>
 
+
+
                         {/* CARD 2 */}
                         <div className="px-2 lg:pl-[30px] lg:px-0">
                             <div className="flex flex-col rounded-xl bg-white h-full">
@@ -123,7 +155,6 @@ const Insights = () => {
                                     <span className="text-black text-sm sm:text-[15px] leading-[21px] md:leading-[22px]">
                                         If we are notified that any User Content infringes another’s intellectual property rights, we may remove such User Content pursuant to the DMCA. In accordance with the DMCA, we have a repeat infringer policy.
                                     </span>
-
                                     <div className="flex justify-between items-center">
                                         <div className="flex gap-3 items-center">
                                             <img src="assets/icons/alt-user-icn.svg" alt="" className="w-auto h-[42px] md:h-auto" />
@@ -137,7 +168,6 @@ const Insights = () => {
                                 </div>
                             </div>
                         </div>
-
                         {/* CARD 1 */}
                         <div className="px-2 lg:pl-[30px] lg:px-0">
                             <div className="flex flex-col rounded-xl bg-white h-full">
@@ -168,33 +198,6 @@ const Insights = () => {
                                     </span>
 
 
-                                    <div className="flex justify-between items-center">
-                                        <div className="flex gap-3 items-center">
-                                            <img src="assets/icons/alt-user-icn.svg" alt="" className="w-auto h-[42px] md:h-auto" />
-                                            <div>
-                                                <span className="block font-semibold text-sm">EsCommerce</span>
-                                                <span className="text-black/60 text-xs">21/06/2024</span>
-                                            </div>
-                                        </div>
-                                        <img src="assets/icons/alt-linkedin.svg" alt="" className="w-auto h-[22px] md:h-auto" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* CARD 2 */}
-                        <div className="px-2 lg:pl-[30px] lg:px-0">
-                            <div className="flex flex-col rounded-xl bg-white h-full">
-                                <img
-                                    src="assets/images/alt-EsCommerce-2.png"
-                                    alt=""
-                                    loading="lazy"
-                                    className="rounded-t-xl md:h-auto h-[260px]"
-                                />
-                                <div className="flex flex-col gap-3.5 md:gap-4 p-4 md:p-5">
-                                    <span className="text-black text-sm sm:text-[15px] leading-[21px] md:leading-[22px]">
-                                        If we are notified that any User Content infringes another’s intellectual property rights, we may remove such User Content pursuant to the DMCA. In accordance with the DMCA, we have a repeat infringer policy.
-                                    </span>
                                     <div className="flex justify-between items-center">
                                         <div className="flex gap-3 items-center">
                                             <img src="assets/icons/alt-user-icn.svg" alt="" className="w-auto h-[42px] md:h-auto" />

@@ -17,9 +17,9 @@ const Insights = () => {
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: "0px",
-        autoplay: true,
-        autoplaySpeed: 2500,
-        pauseOnHover: true,
+        // autoplay: true,
+        // autoplaySpeed: 2500,
+        // pauseOnHover: true,
         responsive: [
             {
                 breakpoint: 1024,

@@ -13,18 +13,8 @@ const PrevArrow: FC<CustomArrowProps> = ({ onClick }) => {
     return (
         <button
             onClick={onClick}
-            className="
-        absolute bottom-[-67px] left-1/2
-        -translate-x-[120%]
-        z-10
-        bg-white/10
-        rounded-full
-        w-10 h-10
-        flex items-center justify-center
-        cursor-pointer
-      "
-        >
-            <img src="assets/icons/arrow-left.svg" alt="" />
+            className="absolute md:bottom-[-67px] bottom-1 left-1/2 -translate-x-[120%] z-10 bg-white/10 rounded-full w-[38px] h-[38px] md:w-12 md:h-12 flex items-center justify-center cursor-pointer">
+            <img src="assets/icons/arrow-left.svg" alt="" className="w-[19px] h-[19px] md:w-6 md:h-6" />
         </button>
     );
 };
@@ -33,18 +23,8 @@ const NextArrow: FC<CustomArrowProps> = ({ onClick }) => {
     return (
         <button
             onClick={onClick}
-            className="
-        absolute bottom-[-67px] left-1/2
-        translate-x-[20%]
-        z-10
-        bg-white/10
-        rounded-full
-        w-10 h-10
-        flex items-center justify-center
-        cursor-pointer
-      "
-        >
-            <img src="assets/icons/arrow-right.svg" alt="" />
+            className="absolute md:bottom-[-67px] bottom-1 left-1/2 translate-x-[20%] z-10 bg-white/10 rounded-full w-[38px] h-[38px] md:w-12 md:h-12 flex items-center justify-center cursor-pointer">
+            <img src="assets/icons/arrow-right.svg" alt="" className="w-[19px] h-[19px] md:w-6 md:h-6" />
         </button>
     );
 };
@@ -90,6 +70,7 @@ const settings: Settings = {
                 centerMode: true,
                 centerPadding: "40px",
                 slidesToShow: 1,
+                variableWidth: true,
                 arrows: true,
             },
         },
@@ -183,7 +164,7 @@ const Testimonial: FC = () => {
         bg-home-primary
         overflow-hidden
         py-[120px] pb-48
-        max-md:py-[102px]
+        max-md:py-[30px]
       "
         >
             {/* Header */}
@@ -199,12 +180,12 @@ const Testimonial: FC = () => {
             </div>
 
             {/* Slider */}
-            <div className="relative">
+            <div className="relative testimonial">
 
                 <Slider {...settings}>
                     {slides.map((item, idx) => (
-                        <div key={idx} className="px-3">
-                            <div className="relative rounded-xl min-h-[378px] overflow-hidden flex justify-center items-center">
+                        <div key={idx} className="px-2">
+                            <div className="relative rounded-xl md:min-h-[378px] min-h-[328px] overflow-hidden flex justify-center items-center">
 
                                 {/* Background image (blurred) */}
                                 <div

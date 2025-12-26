@@ -148,27 +148,17 @@ body {
     display: none !important;
 }
 
-/* @media (max-width: 767px) {
-
-    .df-page .df-page-content,
-    canvas,
-    .df-sheet.df-right-side {
-        height: 208px !important;
-    }
-} */
-
 @media (max-width: 767px) {
-    /* .testimonial .slick-slide {
-        width: 100% !important;
-        max-width: 327px !important;
-        height: 487px !important;
-    } */
 
-    .slick-list {
-        /* min-height: 400px !important; */
+    .testimonial .slick-slide {
+        width: 343px !important;
     }
-}
 
-.slick-dots {
-    display: none !important;
+    .testimonial .slick-list {
+        height: 400px !important;
+    }
+
+    .aspect-video {
+        aspect-ratio: 16/10.8;
+    }
 }

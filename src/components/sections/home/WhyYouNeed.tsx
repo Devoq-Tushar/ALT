@@ -19,7 +19,7 @@ const ReactPlayer = lazy(() => import('react-player'))
 /* 🔹 Skeleton placeholder */
 const VideoSkeleton: React.FC = () => {
     return (
-        <div className="w-full aspect-video bg-[#111] rounded-[12px]" />
+        <div className="w-full aspect-video bg-[#111] rounded-xl" />
     )
 }
 
@@ -60,11 +60,11 @@ const WhyYouNeed: React.FC = () => {
     }
 
     return (
-        <section className="w-full container p-6 md:py-[120px] md:pb-[60px] flex flex-col justify-center items-center gap-9">
-            <div className="flex flex-col justify-center items-center gap-6">
+        <section className="w-full container p-6 md:py-[120px] md:pb-[60px] flex flex-col justify-center items-center md:gap-9">
+            <div className="flex flex-col justify-center items-center gap-6 w-full">
                 {/* 🔹 Header */}
                 <div className="flex flex-col items-center text-center gap-1 md:gap-1.5">
-                    <span className="text-[#5172E7] text-xs md:text-sm font-medium border border-[#5172E7] px-3 py-0.5 md:py-1 rounded-full">
+                    <span className="text-[#5172E7] text-xs md:text-sm font-medium border border-[#5172E7] px-1.5 md:px-[9.5px] py-[0.5] md:py-[1.2px] rounded-full leading-normal md:leading-[26px]">
                         WHY YOU NEED
                     </span>
                     <h1 className="text-[28px] md:text-[48px] text-black font-semibold leading-normal md:leading-[51px]">
@@ -73,7 +73,8 @@ const WhyYouNeed: React.FC = () => {
                 </div>
 
                 {/* 🔹 Content */}
-                <div className="grid grid-cols-4 text-center max-md:grid-cols-2 max-sm:grid-cols-1">
+                {/* <div className="grid grid-cols-4 text-center max-md:grid-cols-2 max-sm:grid-cols-1"> */}
+                <div className="flex flex-wrap text-center justify-center md:gap-6 lg:gap-0">
                     {[
                         {
                             Icon: "assets/icons/waterfall.svg",
@@ -96,7 +97,12 @@ const WhyYouNeed: React.FC = () => {
                             desc: 'Differences in methodology can distort performance and risk profiles.',
                         },
                     ].map(({ Icon, title, desc }, i) => (
-                        <div key={i} className="flex flex-col items-center border-b md:border-r border-[#E6E6E6] last:border-0 w-full pb-6 pt-6 md:pb-0 md:px-3 first:pl-0 last:pr-0">
+                        <div key={i} className={`flex flex-col items-center border-b md:border-b-0 md:border-r border-[#E6E6E6] last:border-0 w-full pb-6 pt-6 md:pb-0 md:pt-0 md:px-3 first:pl-0 last:pr-0
+                            ${i === 0 && "max-w-full sm:max-w-[278px]"}
+                            ${i === 1 && "max-w-full sm:max-w-[284px]"}
+                            ${i === 2 && "max-w-full sm:max-w-[296px]"}
+                            ${i === 3 && "max-w-full sm:max-w-[284px]"}
+                            `}>
                             <div className="mb-3 md:mb-4 bg-white w-full max-w-[38px] md:max-w-[47px] h-auto p-3 rounded-[5px] shadow-[0_9.4px_18.8px_rgba(0,0,0,0.12)]">
                                 <Suspense fallback={null}>
                                     <img src={Icon} alt="" />

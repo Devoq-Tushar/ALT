@@ -3,7 +3,7 @@ const Hero = () => {
         <section className="relative overflow-hidden bg-home-primary">
 
 
-            <div className="relative w-full flex flex-col lg:flex-row justify-between gap-6 md:gap-0 items-center lg:items-start p-6 pt-8 pb-10 md:py-[43px] container max-w-[1257px]! mr-12! z-10">
+            <div className="relative w-full flex flex-col lg:flex-row justify-between gap-6 md:gap-4 items-center lg:items-start p-6 pt-8 pb-10 md:py-[43px] container max-w-[1257px]! mr-12! min-[1440px]:ml-[10.14%]! z-10">
                 <div className="flex flex-col gap-8 md:gap-[60px] w-full max-w-[670px]">
                     <div className="flex flex-col gap-6 md:gap-8">
                         <div className="flex flex-col gap-4 md:gap-5">
@@ -28,9 +28,9 @@ const Hero = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-col md:flex-row justify-start items-center gap-3 md:gap-3.5">
-                            <input type="text" placeholder="Enter email address" className="bg-[#293040] rounded-xl p-3 py-2.5 md:py-[15px] md:px-4 text-[#999999] text-sm md:text-base border border-[#FFFFFF1A] w-full max-w-[351px] leading-6" />
-                            <button className="bg-[#5172E7] box-border flex gap-4 items-center justify-center px-6 py-[13px] md:px-6 md:py-[18px] relative rounded-xl w-full md:w-fit transition-all duration-300 ease-out
+                        <div className="flex flex-col md:flex-row justify-start items-center gap-3 md:gap-4">
+                            <input type="text" placeholder="Enter email address" className="bg-[#293040] rounded-xl p-3 py-2.5 md:py-[15.2px] md:px-4 text-[#999999] text-sm md:text-base border border-[#FFFFFF1A] w-full max-w-[336px] leading-6" />
+                            <button className="bg-[#5172E7] box-border flex gap-4 items-center justify-center px-6 py-[13px] md:px-[24.88px] md:py-[18px] relative rounded-xl w-full md:w-fit transition-all duration-300 ease-out
     hover:scale-[1.04] hover:shadow-lg hover:bg-[#1b6de8] cursor-pointer shadow-[0px_2px_18px_0px_rgba(0,0,0,0.5)]">
                                 <span className="font-medium leading-5 text-sm sm:text-base text-nowrap text-white whitespace-pre">
                                     Sign up for Free Trial

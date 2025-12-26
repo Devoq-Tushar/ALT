@@ -38,9 +38,9 @@ const Hero = () => {
                         <p className="font-semibold leading-normal min-w-full relative shrink-0 text-[20px] lg:text-[24px] text-center text-white uppercase w-min">Alt Indices</p>
                         <p className="font-normal leading-normal min-w-full relative shrink-0 text-[14px] lg:text-[16px] text-center text-white w-min">
                             <span>As institutions transition from traditional Strategic Asset Allocation (SAA) models to the Total Portfolio Approach (TPA), private assets need the same</span>
-                            <span className="font-semibold">transparency, comparability,</span>
-                            <span>and</span>
-                            <span className="font-semibold">benchmark rigor </span>
+                            <span className="font-semibold"> transparency, comparability,</span>
+                            <span> and</span>
+                            <span className="font-semibold"> benchmark rigor </span>
                             <span>long-established in public markets.</span>
                         </p>
                     </div>

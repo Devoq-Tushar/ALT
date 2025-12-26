@@ -1,11 +1,11 @@
 const HowItWorks: React.FC = () => {
     return (
-        <section className="w-full flex bg-[#F2F4FA] py-[120px] max-lg:p-6 max-lg:py-8">
+        <section className="w-full flex bg-[#F2F4FA] py-[120px] max-lg:p-6 max-lg:py-8 justify-center">
             <div className="w-full md:container flex flex-col md:gap-8 gap-6 justify-center items-center">
                 {/* Header */}
                 <div className="w-full flex flex-col items-center gap-2.5 md:gap-3">
                     <label className="text-black text-sm md:text-base font-medium bg-white rounded-full py-1.5 px-3 md:py-2 md:px-4 leading-normal md:leading-[26px]">
-                        HOW IT WORKS
+                        How it works?
                     </label>
                     <h3 className="text-black font-semibold leading-normal md:leading-[58px] text-[48px] max-lg:text-[32px] max-md:text-[28px] text-center">
                         Demystifying Performance
@@ -13,7 +13,7 @@ const HowItWorks: React.FC = () => {
                 </div>
 
                 {/* White Section */}
-                <div className="max-w-[920px] bg-white rounded-2xl flex gap-[120px] p-12 max-lg:flex-col max-lg:gap-4 max-lg:p-5 items-center">
+                <div className="w-full lg:max-w-[920px] bg-white rounded-2xl flex gap-[120px] p-12 sm:flex-row flex-col max-lg:gap-4 max-lg:p-5 items-center">
 
                     {/* Steps */}
                     <div className="w-full max-w-[282px] max-lg:w-full flex">
@@ -80,7 +80,7 @@ const HowItWorks: React.FC = () => {
                             ].map((item, i) => (
                                 <li
                                     key={i}
-                                    className="text-xs md:text-sm font-normal leading-normal md:leading-[22px] pl-8 bg-[url('assets/icons/circle-check-black.svg')] bg-no-repeat bg-left bg-center"
+                                    className="text-xs md:text-sm font-normal leading-normal md:leading-[22px] pl-8 bg-[url('/assets/icons/circle-check-black.svg')] bg-no-repeat bg-left bg-center"
                                 >
                                     {item}
                                 </li>

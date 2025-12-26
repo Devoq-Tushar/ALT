@@ -234,9 +234,9 @@ const WhatWeOffer = () => {
                                                                             key={idx}
                                                                             className={`bg-[#F7F7F7] px-3 ${hasDropdown
                                                                                 ? isOpenSub
-                                                                                    ? "rounded-2xl"
-                                                                                    : "rounded-full"
-                                                                                : "rounded-full"
+                                                                                    ? "rounded-xl"
+                                                                                    : "rounded-3xl"
+                                                                                : "rounded-3xl"
                                                                                 }`}
                                                                         >
                                                                             {/* HEADER */}
@@ -246,22 +246,22 @@ const WhatWeOffer = () => {
                                                                                         ? setOpenSubPoint(isOpenSub ? null : key)
                                                                                         : null
                                                                                 }
-                                                                                className={`w-full flex items-center justify-between gap-3 ${openSubPoint ? "py-2 md:py-3.5 md:pb-2.5" : "py-2 md:py-3"}`}
+                                                                                className={`w-full flex items-center justify-between gap-3 ${isOpenSub ? "py-2.5 md:py-3.5 md:pb-2.5" : "py-3 md:py-3"}`}
                                                                             >
-                                                                                <div className="flex items-center gap-2 md:gap-3">
+                                                                                <div className="w-fit flex items-center gap-2 md:gap-3">
                                                                                     <img
                                                                                         src="assets/icons/icn-check.svg"
                                                                                         alt=""
-                                                                                        className="md:w-5 md:h-6 w-4 h-4"
+                                                                                        className="md:w-5 md:h-6 w-4 h-5"
                                                                                     />
-                                                                                    <span className="font-medium text-xs md:text-sm text-text-secondary text-start leading-[21px]">
+                                                                                    <span className="font-medium text-xs md:text-sm text-text-secondary text-start leading-normal md:leading-[21px]">
                                                                                         {point.text}
                                                                                     </span>
                                                                                 </div>
 
                                                                                 {hasDropdown && (
                                                                                     <svg
-                                                                                        className={`w-4 h-4 transition-transform ${isOpenSub ? "rotate-180" : ""
+                                                                                        className={`w-4 h-4 md:w-6 md:h-6 transition-transform ${isOpenSub ? "rotate-180" : ""
                                                                                             }`}
                                                                                         viewBox="0 0 24 24"
                                                                                         fill="none"

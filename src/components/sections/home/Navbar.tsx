@@ -6,11 +6,12 @@ const Navbar = () => {
 
     return (
         <nav className="sticky top-0 z-50 bg-home-primary shadow-[0px_4px_14px_rgba(0,0,0,0.05)]">
-            <div className="container flex items-center justify-between py-4 md:py-3.5">
+            <div className={`container flex items-center justify-between md:py-3.5 ${menuOpen ? "py-4.5" : "py-4"}`}>
 
                 {/* Logo */}
                 <a href="" onClick={() => window.location.reload()}>
-                    <img src="assets/Logo/alt-home-white-logo.svg" alt="" className="w-full md:h-full h-5" />
+                    <img src="assets/Logo/alt-home-white-logo.svg" alt="" className="md:block hidden" />
+                    <img src="assets/Logo/alt-home-responsive-icn.svg" alt="" className="block md:hidden" />
                 </a>
                 {/* Desktop Menu */}
                 <div className="hidden lg:flex">
@@ -25,7 +26,7 @@ const Navbar = () => {
                                 <span className="text-text-gray font-normal hover:text-text-blue transition-colors duration-200 text-sm md:text-base whitespace-nowrap">
                                     HHI Benchmarks
                                 </span>
-                                <img src="assets/icons/Huge-icon.svg" alt="" />
+                                <img src="assets/icons/alt-home-hi-banchmark-icn.svg" alt="" />
                             </div>
                             <div className="absolute right-0 top-full mt-3 w-44 bg-white rounded-lg shadow-lg opacity-0 invisible
                                             group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50
@@ -53,9 +54,9 @@ const Navbar = () => {
                 </div>
 
                 {/* Desktop SignUp Button */}
-                <button className="bg-bg-turnary box-border hidden lg:flex gap-4 items-center justify-center px-4 py-2.5 md:px-6 md:py-3.5 relative rounded-xl w-fit transition-all duration-300 ease-out
+                <button className="bg-bg-turnary box-border hidden lg:flex gap-4 items-center justify-center px-4 py-2.5 md:px-6 md:py-3 relative rounded-xl w-fit transition-all duration-300 ease-out
     hover:scale-[1.04] hover:shadow-lg hover:bg-[#1b6de8] cursor-pointer shadow-[0px_2px_18px_0px_rgba(0,0,0,0.25)]">
-                    <span className="font-normal leading-5 relative text-sm sm:text-base text-nowrap text-white whitespace-pre">
+                    <span className="font-semibold leading-normal md:leading-6 relative text-sm sm:text-base text-nowrap text-white whitespace-pre">
                         Sign Up
                     </span>
                 </button>
@@ -63,12 +64,13 @@ const Navbar = () => {
 
                 {/* Mobile Menu Icon */}
                 <button
-                    className="lg:hidden flex flex-col gap-[5px]"
+                    className="lg:hidden flex flex-col"
                     onClick={() => setMenuOpen(!menuOpen)}
                 >
-                    <span className={`w-6 h-[3px] bg-text-white transition-all rounded-full ${menuOpen ? "rotate-45 translate-y-2" : ""}`}></span>
-                    <span className={`w-6 h-[3px] bg-text-white transition-all rounded-full ${menuOpen ? "opacity-0" : ""}`}></span>
-                    <span className={`w-6 h-[3px] bg-text-white transition-all rounded-full ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}></span>
+                    <img src="assets/icons/menu-icn.svg" alt="" className={`${menuOpen ? "hidden" : "block"}`} />
+                    <span className={`w-6 h-0.5 bg-text-white transition-all rounded-full ${menuOpen ? "rotate-45 translate-y-0.5" : "hidden"}`}></span>
+                    <span className={`w-6 h-0.5 bg-text-white transition-all rounded-full ${menuOpen ? "opacity-0" : "hidden"}`}></span>
+                    <span className={`w-6 h-0.5 bg-text-white transition-all rounded-full ${menuOpen ? "-rotate-45 -translate-y-0.5" : "hidden"}`}></span>
                 </button>
 
             </div>

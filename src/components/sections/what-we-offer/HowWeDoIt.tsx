@@ -55,7 +55,7 @@ const HowWeDoIt = () => {
                                 <p className="relative shrink-0 text-text-primary font-semibold text-[18px] lg:text-[20px] w-full sm:min-h-[60px]">
                                     {data.title}
                                 </p>
-                                <p className="relative shrink-0 text-text-secondary font-semibold text-[12px] md:text-[14px] w-full tracking-normal md:tracking-[1px]">{data.desc}</p>
+                                <p className="relative shrink-0 text-text-secondary font-semibold text-[12px] md:text-[14px] w-full tracking-normal">{data.desc}</p>
                             </div>
                         </div>
                     ))}

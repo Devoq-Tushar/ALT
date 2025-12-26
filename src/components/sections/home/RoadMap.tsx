@@ -39,7 +39,7 @@ const RoadMap: FC = () => {
     }, [])
 
     return (
-        <section className="relative container flex flex-col-reverse md:flex-row justify-between items-center md:items-start gap-6 sm:gap-[50px] px-6 py-8 md:py-[120px]">
+        <section className="relative container flex flex-col-reverse md:flex-row justify-between items-center md:items-start gap-8 sm:gap-[50px] px-6 py-8 md:py-[120px]">
             {/* Left: Flip Viewer */}
             <div className="w-full max-w-[522px] bg-[#F2F4FA] rounded-2xl py-3.5 px-4 md:pt-[23px] md:px-[26px] md:pb-[50px]">
                 <div className="flex h-full w-full flex-col items-start justify-start rounded-lg md:gap-5">
@@ -66,11 +66,11 @@ const RoadMap: FC = () => {
             </div>
 
             {/* Right: Text & Icons */}
-            <div className="w-full max-w-[593px] flex flex-col justify-center items-center md:items-start gap-8">
+            <div className="w-full max-w-[593px] flex flex-col justify-center items-center md:items-start gap-6 md:gap-8">
                 <div className='flex flex-col justify-center items-center md:items-start gap-5 md:gap-6'>
                     <div
                         className="flex flex-col items-center md:items-start gap-1.5 text-start">
-                        <span className="text-[#5172E7] text-xs md:text-sm font-medium border border-[#5172E7] px-3 py-1 rounded-full">
+                        <span className="text-[#5172E7] text-xs md:text-sm font-medium border border-[#5172E7] px-1.5 md:px-[9.5px] py-[0.5] md:py-[1.2px] rounded-full leading-normal md:leading-[26px]">
                             How It work
                         </span>
 
@@ -108,7 +108,7 @@ const RoadMap: FC = () => {
                                     className="flex w-full max-w-[282px] flex-col items-center sm:items-start">
                                     <div className="mb-3 md:mb-4 bg-white rounded-xl shadow-[0_9.4px_18.8px_rgba(0,0,0,0.12)] p-[9px] py-[8.5px] md:p-2.5">
                                         <Suspense fallback={null}>
-                                            <img src={Icon} alt="" className='w-auto h-[21px] md:h-auto' />
+                                            <img src={Icon} alt="" className='w-auto h-[21px] md:w-[27px] md:h-[27px]' />
                                         </Suspense>
                                     </div>
 
@@ -121,9 +121,9 @@ const RoadMap: FC = () => {
                         </div>
                     </div>
                 </div>
-                <div className="text-center md:text-left bg-[#5172E7] rounded-xl py-4 px-6">
+                <div className="text-center md:text-left bg-[#5172E7] rounded-xl py-[12.5px] md:py-4 px-6 w-full md:w-fit">
                     <div
-                        className=" read-btn cursor-pointer text-white text-sm md:text-base"
+                        className="read-btn cursor-pointer font-semibold text-white text-sm md:text-base leading-normal"
                         data-source="/pdf/whitepaper.pdf"
                     >
                         Read our Whitepaper

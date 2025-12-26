@@ -27,8 +27,8 @@ const Hero = () => {
                             </div>
                         </div>
                         <div className="flex flex-col md:flex-row justify-start items-center gap-3 md:gap-4">
-                            <input type="text" placeholder="Enter email address" className="bg-[#293040] rounded-xl p-3 py-2.5 md:py-[15.2px] md:px-4 text-[#999999] text-sm md:text-base border border-[#FFFFFF1A] w-full max-w-[336px] leading-6" />
-                            <button className="bg-[#5172E7] box-border flex gap-4 items-center justify-center px-6 py-[13px] md:px-[24.88px] md:py-[18px] relative rounded-xl w-full md:w-fit transition-all duration-300 ease-out
+                            <input type="text" placeholder="Enter email address" className="bg-[#293040] rounded-lg md:rounded-xl p-3 py-2.5 md:py-[15.2px] md:px-4 text-[#999999] text-sm md:text-base border border-[#FFFFFF1A] w-full max-w-[336px] leading-6" />
+                            <button className="bg-[#5172E7] box-border flex gap-4 items-center justify-center px-6 py-[13px] md:px-[24.88px] md:py-[18px] relative rounded-lg md:rounded-xl w-full md:w-fit transition-all duration-300 ease-out
     hover:scale-[1.04] hover:shadow-lg hover:bg-[#1b6de8] cursor-pointer shadow-[0px_2px_18px_0px_rgba(0,0,0,0.5)]">
                                 <span className="font-medium leading-5 text-sm sm:text-base text-nowrap text-white whitespace-pre">
                                     Sign up for Free Trial
@@ -49,7 +49,7 @@ const Hero = () => {
                         </span>
 
                         {/* CARD 1 */}
-                        <div className="bg-white/10 rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.15)] p-3.5 md:py-[17px] md:px-[22px] flex flex-row justify-between gap-0 md:gap-6">
+                        <div className="bg-white/10 rounded-[5.88px] md:rounded-[9.26px] shadow-[0_20px_60px_rgba(0,0,0,0.15)] p-3.5 md:py-[17px] md:px-[22px] flex flex-row justify-between gap-0 md:gap-6">
                             {/* Left */}
                             <div className="flex flex-col justify-between">
                                 <div className="flex  justify-start items-center gap-[11px]">
@@ -87,7 +87,7 @@ const Hero = () => {
                         </div>
 
                         {/* CARD 2 */}
-                        <div className="bg-white/10 rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.15)] p-3.5 md:py-[20.5px] md:px-[22px] flex flex-row justify-between gap-0 md:gap-6">
+                        <div className="bg-white/10 rounded-[5.88px] md:rounded-[9.26px] shadow-[0_20px_60px_rgba(0,0,0,0.15)] p-3.5 md:py-[20.5px] md:px-[22px] flex flex-row justify-between gap-0 md:gap-6">
                             {/* Left */}
                             <div className="flex flex-col justify-between">
                                 <div className="flex  justify-start items-center gap-[11px]">
@@ -125,7 +125,7 @@ const Hero = () => {
                         </div>
 
                         {/* CARD 3 */}
-                        <div className="bg-white/10 rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.15)] p-3.5 md:py-[17px] md:px-[22px] flex flex-row justify-between gap-0 md:gap-6">
+                        <div className="bg-white/10 rounded-[5.88px] md:rounded-[9.26px] shadow-[0_20px_60px_rgba(0,0,0,0.15)] p-3.5 md:py-[17px] md:px-[22px] flex flex-row justify-between gap-0 md:gap-6">
                             {/* Left */}
                             <div className="flex flex-col justify-between">
                                 <div className="flex  justify-start items-center gap-[11px]">

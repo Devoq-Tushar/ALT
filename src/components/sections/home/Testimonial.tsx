@@ -13,7 +13,7 @@ const PrevArrow: FC<CustomArrowProps> = ({ onClick }) => {
     return (
         <button
             onClick={onClick}
-            className="absolute md:bottom-[-67px] bottom-1 left-1/2 -translate-x-[120%] z-10 bg-white/10 rounded-full w-[38px] h-[38px] md:w-12 md:h-12 flex items-center justify-center cursor-pointer">
+            className="absolute md:bottom-[-73px] bottom-1 left-1/2 -translate-x-[120%] ml-1 md:ml-0 z-10 bg-white/10 rounded-full w-[38px] h-[38px] md:w-12 md:h-12 flex items-center justify-center cursor-pointer">
             <img src="assets/icons/arrow-left.svg" alt="" className="w-[19px] h-[19px] md:w-6 md:h-6" />
         </button>
     );
@@ -23,7 +23,7 @@ const NextArrow: FC<CustomArrowProps> = ({ onClick }) => {
     return (
         <button
             onClick={onClick}
-            className="absolute md:bottom-[-67px] bottom-1 left-1/2 translate-x-[20%] z-10 bg-white/10 rounded-full w-[38px] h-[38px] md:w-12 md:h-12 flex items-center justify-center cursor-pointer">
+            className="absolute md:bottom-[-73px] bottom-1 left-1/2 translate-x-[20%] -ml-1 md:ml-0 z-10 bg-white/10 rounded-full w-[38px] h-[38px] md:w-12 md:h-12 flex items-center justify-center cursor-pointer">
             <img src="assets/icons/arrow-right.svg" alt="" className="w-[19px] h-[19px] md:w-6 md:h-6" />
         </button>
     );
@@ -43,10 +43,10 @@ const settings: Settings = {
     nextArrow: <NextArrow />,
     responsive: [
         {
-            breakpoint: 990,
+            breakpoint: 1024,
             settings: {
                 centerMode: true,
-                centerPadding: "40px",
+                // centerPadding: "40px",
                 slidesToShow: 2,
                 arrows: true,
                 prevArrow: <PrevArrow />,
@@ -57,7 +57,7 @@ const settings: Settings = {
             breakpoint: 768,
             settings: {
                 centerMode: true,
-                centerPadding: "40px",
+                // centerPadding: "40px",
                 slidesToShow: 2,
                 arrows: true,
                 prevArrow: <PrevArrow />,
@@ -159,14 +159,7 @@ const Testimonial: FC = () => {
     return (
         <section
             id="what-we-do"
-            className="
-        w-full
-        bg-home-primary
-        overflow-hidden
-        py-[120px] pb-48
-        max-md:py-[30px]
-      "
-        >
+            className="w-full bg-home-primary overflow-hidden py-[120px] pb-48 max-md:py-[30px]">
             {/* Header */}
             <div className="flex flex-col items-center gap-3 mb-12 max-md:mb-8 px-6 md:py-0">
                 <h3 className="text-white font-semibold text-[48px] text-center max-lg:text-[32px] max-md:text-[28px] max-w-[640px] leading-normal md:leading-[58px]">
@@ -184,7 +177,7 @@ const Testimonial: FC = () => {
 
                 <Slider {...settings}>
                     {slides.map((item, idx) => (
-                        <div key={idx} className="px-2">
+                        <div key={idx} className="px-2 md:px-2.5">
                             <div className="relative rounded-xl md:min-h-[378px] min-h-[328px] overflow-hidden flex justify-center items-center">
 
                                 {/* Background image (blurred) */}

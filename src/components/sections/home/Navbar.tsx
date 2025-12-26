@@ -1,8 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [hhiOpen, setHhiOpen] = useState(false);
+
+    useEffect(() => {
+        if (menuOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+
+        // Cleanup (important)
+        return () => {
+            document.body.style.overflow = "auto";
+        };
+    }, [menuOpen]);
+
 
     return (
         <nav className="sticky top-0 z-50 bg-home-primary shadow-[0px_4px_14px_rgba(0,0,0,0.05)]">
@@ -54,7 +68,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Desktop SignUp Button */}
-                <button className="bg-bg-turnary box-border hidden lg:flex gap-4 items-center justify-center px-4 py-2.5 md:px-6 md:py-3 relative rounded-xl w-fit transition-all duration-300 ease-out
+                <button className="bg-bg-turnary box-border hidden lg:flex gap-4 items-center justify-center px-4 py-2.5 md:px-6 md:py-3 relative rounded-lg md:rounded-xl w-fit transition-all duration-300 ease-out
     hover:scale-[1.04] hover:shadow-lg hover:bg-[#1b6de8] cursor-pointer shadow-[0px_2px_18px_0px_rgba(0,0,0,0.25)]">
                     <span className="font-semibold leading-normal md:leading-6 relative text-sm sm:text-base text-nowrap text-white whitespace-pre">
                         Sign Up
@@ -77,7 +91,7 @@ const Navbar = () => {
 
             {/* Mobile Dropdown Menu */}
             {menuOpen && (
-                <div className="absolute w-full lg:hidden bg-white shadow-md px-6 py-4 animate-fadeIn flex flex-col gap-5">
+                <div className="absolute w-full lg:hidden bg-white shadow-md px-6 py-4 animate-fadeIn flex flex-col gap-5 overflow-y-auto">
 
                     <a href="#" className="text-text-primary font-medium text-[16px]">Whitepaper</a>
                     <a href="#" className="text-text-primary font-medium text-[16px]">What we do</a>
@@ -102,7 +116,7 @@ const Navbar = () => {
                     )}
 
                     {/* SignUp Button (Mobile) */}
-                    <button className="bg-home-primary box-border content-stretch flex gap-4 items-center justify-center px-4 py-2 md:px-[34px] md:py-4 relative rounded-xl w-fit transition-all duration-300 ease-out
+                    <button className="bg-home-primary box-border content-stretch flex gap-4 items-center justify-center px-4 py-2 md:px-[34px] md:py-4 relative rounded-lg md:rounded-xl w-fit transition-all duration-300 ease-out
     hover:scale-[1.04] hover:shadow-lg cursor-pointer shadow-[0px_4px_14px_0px_rgba(0,0,0,0.25)]">
                         <span className="font-normal leading-normal relative text-sm sm:text-base text-nowrap text-white whitespace-pre">
                             Sign Up

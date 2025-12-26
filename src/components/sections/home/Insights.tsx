@@ -46,8 +46,8 @@ const Insights = () => {
                         Insights
                     </span>
 
-                    <button className="bg-[#5172E7] flex gap-4 items-center justify-center px-5 py-[13px] md:px-6 md:py-4 rounded-xl w-fit transition-all duration-300 hover:scale-[1.04] shadow-lg">
-                        <span className="text-white font-semibold text-sm md:text-base">
+                    <button className="bg-[#5172E7] flex gap-4 items-center justify-center px-5 py-[13px] md:px-6 md:py-4 rounded-lg md:rounded-xl w-fit transition-all duration-300 hover:scale-[1.04] shadow-lg">
+                        <span className="text-white font-semibold text-sm md:text-base leading-[21px] md:leading-[24px]">
                             View All
                         </span>
                     </button>

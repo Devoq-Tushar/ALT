@@ -100,12 +100,7 @@ const HowItWorks: React.FC = () => {
 
                             <a
                                 href="#our-pricing"
-                                className="w-full md:w-fit flex items-center justify-center py-3 px-4 md:py-3 md:px-6
-                           rounded-xl bg-[rgba(81,114,231,0.15)]
-                           text-[#5172E7] text-sm md:text-base font-semibold
-                           transition-all duration-300
-                           hover:bg-[#1877F2] hover:text-white hover:border hover:border-[#1877F2]"
-                            >
+                                className="w-full md:w-fit flex items-center justify-center py-3 px-4 md:py-3 md:px-6 rounded-lg md:rounded-xl bg-[rgba(81,114,231,0.15)] text-[#5172E7] text-sm md:text-base font-semibold transition-all duration-300 hover:bg-[#1877F2] hover:text-white hover:border hover:border-[#1877F2]">
                                 See our pricing
                             </a>
                         </div>

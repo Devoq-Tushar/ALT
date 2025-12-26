@@ -97,7 +97,7 @@ const WhyYouNeed: React.FC = () => {
                             desc: 'Differences in methodology can distort performance and risk profiles.',
                         },
                     ].map(({ Icon, title, desc }, i) => (
-                        <div key={i} className={`flex flex-col items-center border-b md:border-b-0 md:border-r border-[#E6E6E6] last:border-0 w-full pb-6 pt-6 md:pb-0 md:pt-0 md:px-3 first:pl-0 last:pr-0
+                        <div key={i} className={`flex flex-col items-center border-b md:border-b-0 md:border-r border-[#E6E6E6] last:border-0 w-full pb-6 pt-6 md:pb-0 md:pt-0 md:px-3 first:pl-0 first:pt-0 last:pr-0
                             ${i === 0 && "max-w-full sm:max-w-[278px]"}
                             ${i === 1 && "max-w-full sm:max-w-[284px]"}
                             ${i === 2 && "max-w-full sm:max-w-[296px]"}

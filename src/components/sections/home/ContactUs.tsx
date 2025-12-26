@@ -8,8 +8,7 @@ const ContactUs = () => {
                     <span className="text-text-white/70 font-medium text-base sm:text-[18px] max-w-[588px] text-center">Join us and convert complex Information into compelling narratives
                         with ease</span>
                 </div>
-                <button className="bg-bg-white box-border flex gap-4 items-center justify-center px-5 py-[12.5px] md:px-6 md:py-4 relative rounded-xl w-fit transition-all duration-300 ease-out
-    hover:scale-[1.04] hover:shadow-lg cursor-pointer shadow-[0px_2px_18px_0px_rgba(0,0,0,0.25)]">
+                <button className="bg-bg-white box-border flex gap-4 items-center justify-center px-5 py-[12.5px] md:px-6 md:py-4 relative rounded-lg md:rounded-xl w-fit transition-all duration-300 ease-out hover:scale-[1.04] hover:shadow-lg cursor-pointer shadow-[0px_2px_18px_0px_rgba(0,0,0,0.25)]">
                     <span className="leading-[21px] md:leading-6 relative text-sm sm:text-base text-nowrap text-[#5172E7] whitespace-pre font-semibold">
                         Sign Up
                     </span>

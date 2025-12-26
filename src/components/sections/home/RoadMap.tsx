@@ -121,7 +121,7 @@ const RoadMap: FC = () => {
                         </div>
                     </div>
                 </div>
-                <div className="text-center md:text-left bg-[#5172E7] rounded-xl py-[12.5px] md:py-4 px-6 w-full md:w-fit">
+                <div className="text-center md:text-left bg-[#5172E7] rounded-lg md:rounded-xl py-[12.5px] md:py-4 px-6 w-full md:w-fit">
                     <div
                         className="read-btn cursor-pointer font-semibold text-white text-sm md:text-base leading-normal"
                         data-source="/pdf/whitepaper.pdf"

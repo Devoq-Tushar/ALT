@@ -5,7 +5,7 @@ const StartWithALT = () => {
 
             {/* Glow image right */}
             <div className="absolute top-0 right-[-420px] h-[1100px] w-[900px] z-1">
-                <img src="assets/images/glow-img-1.svg" alt="" className="blur-[100px]" />
+                <img src="assets/images/glow-img-1.svg" alt="glow-img" className="blur-[100px]" />
             </div>
 
             <div className="relative flex flex-col justify-center items-center gap-6 sm:gap-[50px] container w-full p-6 sm:py-[100px] sm:pt-0 rounded-2xl z-10">
@@ -23,10 +23,10 @@ const StartWithALT = () => {
                     </button>
 
                     <div className="absolute block h-[368px] items-center justify-center -right-8 md:-right-10 top-[-174px] md:top-[-150px] w-[120px] lg:w-[213px] rotate-180">
-                        <img alt="" className="block max-w-none size-full" src="assets/images/start-with-alt-fetured-img.svg" />
+                        <img alt="start-with-alt-fetured-img" className="block max-w-none size-full" src="assets/images/start-with-alt-fetured-img.svg" />
                     </div>
                     <div className="absolute block h-[368px] -left-8 bottom-[-174px] md:-left-10 md:bottom-[-150px] w-[120px] lg:w-[213px]">
-                        <img alt="" className="block max-w-none size-full" src="assets/images/start-with-alt-fetured-img.svg" />
+                        <img alt="start-with-alt-fetured-img" className="block max-w-none size-full" src="assets/images/start-with-alt-fetured-img.svg" />
                     </div>
                 </div>
             </div>

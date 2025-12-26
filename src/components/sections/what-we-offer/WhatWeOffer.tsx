@@ -70,12 +70,12 @@ const WhatWeOffer = () => {
         <div className="relative overflow-hidden">
             {/* Glow image left */}
             <div className="absolute top-20 left-[-280px] h-[690px] w-[610px] z-1">
-                <img src="assets/images/glow-img-1.svg" alt="" className="blur-[100px] sm:blur-[60px]" />
+                <img src="assets/images/glow-img-1.svg" alt="glow-img" loading="lazy" className="blur-[100px] sm:blur-[60px]" />
             </div>
 
             {/* Glow image right */}
             <div className="hidden sm:block absolute top-1/2 sm:top-20 right-[-280px] h-[690px] w-[610px] z-1 rotate-90">
-                <img src="assets/images/glow-img-1.svg" alt="" className="blur-[60px]" />
+                <img src="assets/images/glow-img-1.svg" alt="glow-img" loading="lazy" className="blur-[60px]" />
             </div>
             <div className="relative flex flex-col justify-center items-center gap-6 sm:gap-[50px] container w-full p-6 md:py-[100px] md:pt-[30px] md:pb-[171px] rounded-2xl z-10">
                 <span className="text-text-primary font-semibold text-2xl sm:text-[48px] uppercase">What We Offer</span>
@@ -86,7 +86,7 @@ const WhatWeOffer = () => {
                             <div className="w-[1.49px] md:w-[1.8px] h-full bg-[#EDAB5D]"></div>
                         </div>
                         <div className="absolute -top-10 md:-top-3 right-[-110px] md:right-[-90px] z-0">
-                            <img src="assets/images/fetured-img-what-we-offer.png" alt="" className="w-full md:h-full h-[350px]" />
+                            <img src="assets/images/fetured-img-what-we-offer.png" alt="fetured-img-what-we-offer" loading="lazy" className="w-full md:h-full h-[350px]" />
                         </div>
                         <div className="w-full flex justify-end md:justify-center">
                             <p className="relative shrink-0 text-text-primary text-[18px] lg:text-2xl font-semibold max-w-[222px] md:max-w-[278px]">Regulatory-Aligned Reporting</p>
@@ -96,7 +96,7 @@ const WhatWeOffer = () => {
                             <div className="flex justify-start items-center gap-3 md:gap-5 relative">
                                 <div className="w-2.5 h-2.5 bg-[#EDAB5D] rounded-full absolute z-1 -top-1 left-6 md:left-[31px]"></div>
                                 <div className="bg-white box-border flex gap-4 items-center justify-center p-[17px] md:p-[21px] relative z-2 rounded-[50px] shrink-0 shadow-[0px_20px_35px_rgba(0,0,0,0.05)]">
-                                    <img src="assets/icons/icn-ilpa.svg" alt="" className="w-6 md:w-[30px] h-full" />
+                                    <img src="assets/icons/icn-ilpa.svg" alt="icn-ilpa" loading="lazy" className="w-6 md:w-[30px] h-full" />
                                 </div>
                                 <div className="flex flex-col justify-start items-center gap-1.5 md:gap-2">
                                     <p className=" relative shrink-0 text-text-primary font-semibold text-[16px] lg:text-[18px] w-full">ILPA</p>
@@ -107,7 +107,7 @@ const WhatWeOffer = () => {
                             {/* AIFMD */}
                             <div className="flex justify-start items-center gap-3 md:gap-5">
                                 <div className="bg-white box-border flex gap-4 items-center justify-center p-[17px] md:p-[21px] relative rounded-[50px] shrink-0 shadow-[0px_20px_35px_rgba(0,0,0,0.05)] md:shadow-[0px_20px_35px_rgba(0,0,0,0.05)]">
-                                    <img src="assets/icons/icn-aifmd.svg" alt="" className="w-6 md:w-[30px] h-full" />
+                                    <img src="assets/icons/icn-aifmd.svg" alt="icn-aifmd" loading="lazy" className="w-6 md:w-[30px] h-full" />
                                 </div>
                                 <div className="flex flex-col justify-start items-center gap-1.5 md:gap-2">
                                     <p className=" relative shrink-0 text-text-primary font-semibold text-[16px] lg:text-[18px] w-full">AIFMD</p>
@@ -118,7 +118,7 @@ const WhatWeOffer = () => {
                             {/* GIPS® */}
                             <div className="flex justify-start items-center gap-3 md:gap-5">
                                 <div className="bg-white box-border flex gap-4 items-center justify-center p-[17px] md:p-[21px] relative rounded-[50px] shrink-0 shadow-[0px_20px_35px_rgba(0,0,0,0.05)]">
-                                    <img src="assets/icons/icn-gips.svg" alt="" className="w-6 md:w-[30px] h-full" />
+                                    <img src="assets/icons/icn-gips.svg" alt="icn-gips" loading="lazy" className="w-6 md:w-[30px] h-full" />
                                 </div>
                                 <div className="flex flex-col justify-start items-center gap-1.5 md:gap-2">
                                     <p className=" relative shrink-0 text-text-primary font-semibold text-[16px] lg:text-[18px] w-full">GIPS®</p>
@@ -129,7 +129,7 @@ const WhatWeOffer = () => {
                             {/* SEC */}
                             <div className="flex justify-start items-center gap-3 md:gap-5">
                                 <div className="bg-white box-border flex gap-4 items-center justify-center p-[17px] md:p-[21px] relative rounded-[50px] shrink-0 shadow-[0px_20px_35px_rgba(0,0,0,0.05)]">
-                                    <img src="assets/icons/icn-sec.svg" alt="" className="w-6 md:w-[30px] h-full" />
+                                    <img src="assets/icons/icn-sec.svg" alt="icn-sec" loading="lazy" className="w-6 md:w-[30px] h-full" />
                                 </div>
                                 <div className="flex flex-col justify-start items-center gap-1.5 md:gap-2">
                                     <p className=" relative shrink-0 text-text-primary font-semibold text-[16px] lg:text-[18px] w-full">SEC</p>
@@ -141,7 +141,7 @@ const WhatWeOffer = () => {
                             {/* Anti-Fraud Rule */}
                             <div className="flex justify-start items-center gap-3 md:gap-5">
                                 <div className="bg-white box-border flex gap-4 items-center justify-center p-[17px] md:p-[21px] relative rounded-[50px] shrink-0 shadow-[0px_20px_35px_rgba(0,0,0,0.05)]">
-                                    <img src="assets/icons/icn-anti-fraud-rule.svg" alt="" className="w-6 md:w-[30px] h-full" />
+                                    <img src="assets/icons/icn-anti-fraud-rule.svg" alt="icn-anti-fraud-rule" loading="lazy" className="w-6 md:w-[30px] h-full" />
                                 </div>
                                 <div className="flex flex-col justify-start items-center gap-1.5 md:gap-2">
                                     <p className=" relative shrink-0 text-text-primary font-semibold text-[16px] lg:text-[18px] w-full">Anti-Fraud Rule</p>
@@ -153,7 +153,7 @@ const WhatWeOffer = () => {
                             <div className="flex justify-start items-center gap-3 md:gap-5 relative">
                                 <div className="w-2.5 h-2.5 bg-[#EDAB5D] rounded-full absolute z-1 -bottom-1 left-6 md:left-[31px]"></div>
                                 <div className="bg-white box-border flex gap-4 items-center justify-center p-[17px] md:p-[21px] relative z-2 rounded-[50px] shrink-0 shadow-[0px_20px_35px_rgba(0,0,0,0.05)]">
-                                    <img src="assets/icons/icn-mifid.svg" alt="" className="w-6 md:w-[30px] h-full" />
+                                    <img src="assets/icons/icn-mifid.svg" alt="icn-mifid" loading="lazy" className="w-6 md:w-[30px] h-full" />
                                 </div>
                                 <div className="flex flex-col justify-start items-center gap-1.5 md:gap-2">
                                     <p className=" relative shrink-0 text-text-primary font-semibold text-[16px] lg:text-[18px] w-full">MIFID II</p>

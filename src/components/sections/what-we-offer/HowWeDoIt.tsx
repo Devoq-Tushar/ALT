@@ -49,7 +49,7 @@ const HowWeDoIt = () => {
                                 </div>
                             </div>
                             <div className="h-[250px] md:h-[286px] relative shrink-0 w-full">
-                                <img alt="" className="w-full h-full" src={data.image} />
+                                <img alt="how-we-do-it-images" className="w-full h-full" src={data.image} loading="lazy" />
                             </div>
                             <div className="content-stretch flex flex-col gap-2 md:gap-3 items-start leading-normal relative shrink-0 w-full">
                                 <p className="relative shrink-0 text-text-primary font-semibold text-[18px] lg:text-[20px] w-full sm:min-h-[60px]">

@@ -10,7 +10,7 @@ const Navbar = () => {
 
                 {/* Logo */}
                 <a href="" onClick={() => window.location.reload()}>
-                    <img src="assets/Logo/alt-logo.svg" alt="" className="w-full md:h-full h-5" />
+                    <img src="assets/Logo/alt-logo.svg" alt="alt-logo" className="w-full md:h-full h-5" loading="lazy" />
                 </a>
                 {/* Desktop Menu */}
                 <div className="hidden lg:flex">
@@ -25,7 +25,7 @@ const Navbar = () => {
                                 <span className="text-text-primary font-medium hover:text-text-blue transition-colors duration-200 text-[14px] whitespace-nowrap">
                                     HHI Benchmarks
                                 </span>
-                                <img src="assets/icons/Huge-icon.svg" alt="" />
+                                <img src="assets/icons/Huge-icon.svg" alt="Huge-icon" loading="lazy" />
                             </div>
                             <div className="absolute right-0 top-full mt-3 w-44 bg-white rounded-lg shadow-lg opacity-0 invisible
                                             group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50
@@ -88,7 +88,7 @@ const Navbar = () => {
                         className="flex items-center justify-between text-text-primary font-medium text-[16px]"
                     >
                         <span>HHI Benchmarks</span>
-                        <img src="assets/icons/Huge-icon.svg" alt="" className={`transition-transform ${hhiOpen ? "rotate-180" : ""}`} />
+                        <img src="assets/icons/Huge-icon.svg" alt="Huge-icon" loading="lazy" className={`transition-transform ${hhiOpen ? "rotate-180" : ""}`} />
                     </button>
 
                     {hhiOpen && (

@@ -56,7 +56,7 @@ const Insights = () => {
                 <div className="w-full max-w-[770px] hidden lg:flex justify-center items-center gap-6 md:gap-[30px]">
                     <div className="w-full max-w-[370px] flex flex-col justify-center items-center rounded-xl bg-white">
                         <div className="">
-                            <img src="assets/images/alt-EsCommerce-1.png" alt="" className="rounded-tl-xl rounded-tr-xl" />
+                            <img src="assets/images/alt-EsCommerce-1.png" alt="" loading="lazy" className="rounded-tl-xl rounded-tr-xl" />
                         </div>
                         <div className="flex flex-col justify-center items-center gap-3.5 md:gap-4 p-4 md:p-5">
                             <span className="text-black font-normal text-sm sm:text-[15px] leading-normal md:leading-[22px]">SEBI eases compliance for alternative funds, enabling flexible benchmarking. SEBI eases For information about the accessibility of our websites, applications, content and services, please visit our... Read More</span>
@@ -74,7 +74,7 @@ const Insights = () => {
                     </div>
                     <div className="w-full max-w-[370px] flex flex-col justify-center items-center rounded-xl bg-white">
                         <div className="">
-                            <img src="assets/images/alt-EsCommerce-2.png" alt="" className="rounded-tl-xl rounded-tr-xl" />
+                            <img src="assets/images/alt-EsCommerce-2.png" alt="" loading="lazy" className="rounded-tl-xl rounded-tr-xl" />
                         </div>
                         <div className="flex flex-col justify-center items-center gap-3.5 md:gap-4 p-4 md:p-5">
                             <span className="text-black font-normal text-sm sm:text-[15px] leading-normal md:leading-[22px]">If we are notified that any User Content infringes another’s intellectual property rights, we may remove such User Content pursuant to the DMCA. In accordance with the DMCA, we have a repeat infringer policy.</span>
@@ -103,6 +103,7 @@ const Insights = () => {
                                 <img
                                     src="assets/images/alt-EsCommerce-1.png"
                                     alt=""
+                                    loading="lazy"
                                     className="rounded-t-xl md:h-auto h-[260px]"
                                 />
                                 <div className="flex flex-col gap-3.5 md:gap-4 p-4 md:p-5">
@@ -130,6 +131,7 @@ const Insights = () => {
                                 <img
                                     src="assets/images/alt-EsCommerce-2.png"
                                     alt=""
+                                    loading="lazy"
                                     className="rounded-t-xl md:h-auto h-[260px]"
                                 />
                                 <div className="flex flex-col gap-3.5 md:gap-4 p-4 md:p-5">
@@ -157,6 +159,7 @@ const Insights = () => {
                                 <img
                                     src="assets/images/alt-EsCommerce-1.png"
                                     alt=""
+                                    loading="lazy"
                                     className="rounded-t-xl md:h-auto h-[260px]"
                                 />
                                 <div className="flex flex-col gap-3.5 md:gap-4 p-4 md:p-5">
@@ -184,6 +187,7 @@ const Insights = () => {
                                 <img
                                     src="assets/images/alt-EsCommerce-2.png"
                                     alt=""
+                                    loading="lazy"
                                     className="rounded-t-xl md:h-auto h-[260px]"
                                 />
                                 <div className="flex flex-col gap-3.5 md:gap-4 p-4 md:p-5">

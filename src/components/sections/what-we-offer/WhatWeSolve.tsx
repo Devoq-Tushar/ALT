@@ -5,7 +5,7 @@ const WhatWeSolve = () => {
 
             {/* Desktop: Image on left */}
             <div className="max-w-[570px]">
-                <img alt="" className="rounded-[20px] border-4 border-bg-secondary/10" src="assets/images/what-we-solve-img.png" />
+                <img alt="what-we-solve" className="rounded-[20px] border-4 border-bg-secondary/10" src="assets/images/what-we-solve-img.png" loading="lazy" />
             </div>
             {/* Title and Description */}
             <div className="content-stretch flex flex-col gap-4 lg:gap-6 items-start relative shrink-0 w-full max-w-[327px] md:w-full lg:max-w-[470px] text-center lg:text-left">

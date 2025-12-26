@@ -105,7 +105,7 @@ const WhyYouNeed: React.FC = () => {
                             `}>
                             <div className="mb-3 md:mb-4 bg-white w-full max-w-[38px] md:max-w-[47px] h-auto p-3 rounded-[5px] shadow-[0_9.4px_18.8px_rgba(0,0,0,0.12)]">
                                 <Suspense fallback={null}>
-                                    <img src={Icon} alt="" />
+                                    <img src={Icon} alt="" loading="lazy" />
                                 </Suspense>
                             </div>
                             <h6 className="font-semibold text-sm md:text-base mb-0.5 leading-normal md:leading-[26px]">{title}</h6>

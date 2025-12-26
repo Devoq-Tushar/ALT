@@ -4,12 +4,12 @@ const Hero = () => {
 
             {/* Glow image left */}
             <div className="absolute top-0 left-0 h-[250px] w-[250px] sm:h-[690px] sm:w-[610px] z-1">
-                <img src="assets/images/hero-glow-img.svg" alt="" className="blur-[0px]" />
+                <img src="assets/images/hero-glow-img.svg" alt="glow-imgglow-img" className="blur-[0px]" />
             </div>
 
             {/* Glow image right */}
             <div className="absolute top-[-45px] right-0 h-[250px] w-[250px] sm:h-[690px] sm:w-[610px] z-1 rotate-90">
-                <img src="assets/images/hero-glow-img.svg" alt="" className="blur-[0px]" />
+                <img src="assets/images/hero-glow-img.svg" alt="glow-img" className="blur-[0px]" />
             </div>
             <div className="relative w-full flex flex-col justify-center items-center gap-6 sm:gap-[70px] p-6 pt-8 pb-10 md:pt-[70px] md:pb-[70px] container z-10">
 
@@ -30,10 +30,10 @@ const Hero = () => {
                 <div className="relative bg-bg-primary rounded-2xl lg:rounded-[20px] w-full max-w-[970px]">
                     <div className="box-border content-stretch flex flex-col gap-3 md:gap-4 items-start overflow-clip px-6 md:px-[60px] lg:px-[100px] pb-6 pt-8 md:py-8 lg:py-10 relative rounded-[inherit] w-full">
                         <div className="absolute h-[173.099px] lg:h-[242.339px] right-[-34px] md:right-[-34px] lg:right-[-42px] top-[-75px] lg:top-[-101px] w-[100px] lg:w-[140px]">
-                            <img alt="" className="block max-w-none size-full" height="269.135" src="assets/images/hero-Alt-Indices-fetured-img-2.svg" width="166.796" />
+                            <img alt="hero-Alt-Indices-fetured-img-2" loading="lazy" className="block max-w-none size-full" height="269.135" src="assets/images/hero-Alt-Indices-fetured-img-2.svg" width="166.796" />
                         </div>
                         <div className="absolute flex h-[173.099px] lg:h-[242.339px] items-center justify-center left-[-34px] lg:left-[-42px] top-[-75px] lg:top-[-101px] w-[100px] lg:w-[140px]">
-                            <img alt="" className="block max-w-none size-full" height="269.135" src="assets/images/hero-Alt-Indices-fetured-img-1.svg" width="166.796" />
+                            <img alt="hero-Alt-Indices-fetured-img-1" loading="lazy" className="block max-w-none size-full" height="269.135" src="assets/images/hero-Alt-Indices-fetured-img-1.svg" width="166.796" />
                         </div>
                         <p className="font-semibold leading-normal min-w-full relative shrink-0 text-[20px] lg:text-[24px] text-center text-white uppercase w-min">Alt Indices</p>
                         <p className="font-normal leading-normal min-w-full relative shrink-0 text-[14px] lg:text-[16px] text-center text-white w-min">
@@ -57,9 +57,9 @@ const Hero = () => {
                         <img src="assets/images/Verified-Funds-chart-img.svg" alt="" />
                     </div>
                 </div> */}
-                <img src="assets/images/hero-graphics-img-1.svg" alt="" className="hidden xl:flex absolute left-[-45px] top-[180px] translate-y-[-50%] w-[168px] h-[200px]" />
+                <img src="assets/images/hero-graphics-img-1.svg" alt="hero-graphics-img-1" loading="lazy" className="hidden xl:flex absolute left-[-45px] top-[180px] translate-y-[-50%] w-[168px] h-[200px]" />
 
-                <img src="assets/images/hero-graphics-img-2.svg" alt="" className="hidden xl:flex absolute rotate-0 h-[193px] right-[-45px] top-[180px] translate-y-[-50%] w-[168px]" />
+                <img src="assets/images/hero-graphics-img-2.svg" alt="hero-graphics-img-2" loading="lazy" className="hidden xl:flex absolute rotate-0 h-[193px] right-[-45px] top-[180px] translate-y-[-50%] w-[168px]" />
                 {/* <div className="hidden xl:flex absolute rotate-10 h-[193px] items-center justify-center right-[-45px] top-[180px] translate-y-[-50%] w-[168px]">
                     <div className="bg-white box-border flex flex-col gap-[30px] items-start p-6 relative rounded-[20px] border-4 border-[rgba(24,119,242,0.1)] border-solid">
                         <div className="content-stretch flex flex-col gap-1 items-start leading-normal relative shrink-0 text-center text-nowrap whitespace-pre">

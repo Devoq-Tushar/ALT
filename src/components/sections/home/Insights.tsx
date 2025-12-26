@@ -6,7 +6,6 @@ import { useState } from "react";
 
 const Insights = () => {
 
-    const [openText, setOpenText] = useState<number | null>(null);
     const [activeText, setActiveText] = useState<string | null>(null);
 
     const settings = {

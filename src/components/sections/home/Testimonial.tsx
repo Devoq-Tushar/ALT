@@ -162,7 +162,7 @@ const Testimonial: FC = () => {
             className="w-full bg-home-primary overflow-hidden py-[120px] pb-48 max-md:py-[30px]">
             {/* Header */}
             <div className="flex flex-col items-center gap-3 mb-12 max-md:mb-8 px-6 md:py-0">
-                <h3 className="text-white font-semibold text-[48px] text-center max-lg:text-[32px] max-md:text-[28px] max-w-[640px] leading-normal md:leading-[58px]">
+                <h3 className="text-white font-semibold text-[48px] text-center max-lg:text-[32px] max-md:text-[28px] leading-normal md:leading-[58px]">
                     Turn Complexity into Clarity
                 </h3>
 

@@ -83,8 +83,8 @@ const WhyYouNeed: React.FC = () => {
                         },
                         {
                             Icon: "assets/icons/search-normal.svg",
-                            title: 'Limited transparency',
-                            desc: 'Investors struggle to assess real returns in private equity and VC.',
+                            title: 'Inconsistent reporting',
+                            desc: 'Non-uniform disclosures obscure true performance and risk.',
                         },
                         {
                             Icon: "assets/icons/cube.svg",
@@ -93,8 +93,8 @@ const WhyYouNeed: React.FC = () => {
                         },
                         {
                             Icon: "assets/icons/blue-lock.svg",
-                            title: 'Difficulty comparing strategies',
-                            desc: 'Differences in methodology can distort performance and risk profiles.',
+                            title: 'Difficulty comparing',
+                            desc: 'Differences in methodology can distort investment profiles.',
                         },
                     ].map(({ Icon, title, desc }, i) => (
                         <div key={i} className={`flex flex-col items-center border-b md:border-b-0 md:border-r border-[#E6E6E6] last:border-0 w-full pb-6 pt-6 md:pb-0 md:pt-0 md:px-3 first:pl-0 first:pt-0 last:pr-0

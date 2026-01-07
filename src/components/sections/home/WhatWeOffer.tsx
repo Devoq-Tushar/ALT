@@ -27,21 +27,27 @@ const faqs: FAQ[] = [
                 ],
             },
             {
-                text: "How does this manager’s investment pattern?",
+                text: "How does this manager’s investment pattern differ from peers?",
                 regulationList: [
-                    "Pattern analysis uses rolling exposure windows.",
+                    "We benchmark its stage, concentration, sector mix, and partner behavior against similar managers to highlight where it diverges from the peer norm.",
                 ],
             },
             {
-                text: "How should this fund be classified?",
+                text: "How should this fund be classified ?",
                 regulationList: [
-                    "Peer groups are identified based on observed investing behavior rather than self-reported labels. Eg 2016–2019, North America, SaaS AI",
+                    "Your fund sits closest to a cluster of 2014–2017 SaaS-focused funds with median check sizes of $8–12M.",
                 ],
             },
             {
-                text: "How does our performance look after adjusting for fund size?",
+                text: "How does our performance look after adjusting for fund size ?",
                 regulationList: [
-                    "Peer groups are identified based on observed investing behavior rather than self-reported labels. Eg 2016–2019, North America, SaaS AI",
+                    "After removing fund-size distortion and funding-concentration effects, your adjusted performance rank improves from the 46th to the 39th percentile.",
+                ],
+            },
+            {
+                text: "How would portfolio performance change under a ±5% change in specific company or sector exposures?",
+                regulationList: [
+                    "By adjusting company or sector exposures by ±5%, we isolate the causal impact on portfolio performance and determine whether outcomes are driven by timing decisions or security selection.",
                 ],
             },
         ],
@@ -52,15 +58,27 @@ const faqs: FAQ[] = [
         subtitle: "For Risk and Compliance departments",
         points: [
             {
-                text: "What concentration risk do we face if a sector weakens across managers?",
+                text: "Is our exposure concentrated in manager or sector communities?",
                 regulationList: [
-                    "Stress-tested using correlated drawdown models.",
+                    "We identify where exposures cluster across shared managers, sectors, and underlying investments, highlighting portfolio-level concentration risk.",
                 ],
             },
             {
-                text: "Will adding this manager create conflict-of-interest risks?",
+                text: "What is our contagion risk if a key asset or sector shock propagates through our investments?",
                 regulationList: [
-                    "Peer groups are identified based on observed investing behavior rather than self-reported labels. Eg 2016–2019, North America, SaaS AI",
+                    "We simulate potential shock pathways through linked groups to identify where sector-level stress could trigger direct and secondary impacts.",
+                ],
+            },
+            {
+                text: "Which factors were responsible for the portfolio drawdown?",
+                regulationList: [
+                    "We attribute the drawdown to sector, market, manager, and company-level factors, separating systematic effects from idiosyncratic losses.",
+                ],
+            },
+            {
+                text: "Does this fund’s marketing or quarterly report comply with local marketing rules?",
+                regulationList: [
+                    "We check marketing and quarterly disclosures for compliance with applicable local marketing and reporting rules, highlighting exceptions and required disclosures.",
                 ],
             },
         ],

@@ -1,11 +1,17 @@
 import { useState } from "react";
 
+interface RiskItem {
+    question: string;
+    answer: string;
+}
+
 interface FAQ {
     id: number;
     title: string;
     subtitle?: string;
     description?: string;
     points?: string[];
+    riskItems?: RiskItem[];
 }
 
 
@@ -39,13 +45,34 @@ const faqs: FAQ[] = [
     },
     {
         id: 3,
-        title: "3. Risk Benchmarks",
-        subtitle: "For Risk, Portfolio Design & TPA Teams**",
-        description: "Risk benchmarking aligned with TPA frameworks.",
-        points: [
-            "Risk-adjusted benchmarks (Sortino-aligned) designed for private markets, where upside variance should not be penalized the way Sharpe-based models do."
+        title: "3. Risk Signals",
+        subtitle: "For Risk and Compliance departments",
+        riskItems: [
+            {
+                question: "Is our exposure concentrated in manager or sector communities?",
+                answer:
+                    "We identify where exposures cluster across shared managers, sectors, and underlying investments, highlighting portfolio-level concentration risk.",
+            },
+            {
+                question:
+                    "What is our contagion risk if a key company or sector shock propagates through our investment networks?",
+                answer:
+                    "We simulate potential shock pathways through linked groups to identify where sector-level stress could trigger direct and secondary impacts.",
+            },
+            {
+                question: "Which factors were responsible for the portfolio drawdown?",
+                answer:
+                    "We attribute the drawdown to sector, market, manager, and company-level factors, separating systematic effects from idiosyncratic losses.",
+            },
+            {
+                question:
+                    "Does this fund’s marketing or quarterly report comply with local marketing rules?",
+                answer:
+                    "We check marketing and quarterly disclosures for compliance with applicable local marketing and reporting rules, highlighting exceptions and required disclosures.",
+            },
         ],
-    },
+    }
+
 ];
 
 const regulationList = [
@@ -60,6 +87,7 @@ const regulationList = [
 const WhatWeOffer = () => {
     const [openId, setOpenId] = useState<number | null>(1);
     const [openSubPoint, setOpenSubPoint] = useState<boolean>(false);
+    const [openRiskIndex, setOpenRiskIndex] = useState<number | null>(0);
 
 
     const toggle = (id: number) => {
@@ -190,24 +218,66 @@ const WhatWeOffer = () => {
                                                 {/* SPECIAL LAYOUT FOR FAQ 3 */}
                                                 {faq.id === 3 ? (
                                                     <>
-
-                                                        <p className="font-semibold text-xs md:text-sm text-text-secondary mb-1.5">
+                                                        <p className="font-semibold text-xs md:text-sm text-text-secondary mb-4">
                                                             {faq.subtitle}
                                                         </p>
 
-                                                        <p className="font-normal text-xs md:text-sm text-text-secondary mb-3 md:mb-4">
-                                                            {faq.description}
-                                                        </p>
+                                                        <ul className="space-y-4">
+                                                            {faq.riskItems?.map((item, idx) => {
+                                                                const isOpenRisk = openRiskIndex === idx;
 
-                                                        <p className="text-sm md:text-base text-text-secondary font-normal leading-5 md:leading-6">
-                                                            <span className="font-medium text-text-primary">
-                                                                Risk-adjusted benchmarks (Sortino-aligned)
-                                                            </span>{" "}
-                                                            designed for private markets, where upside variance should not be
-                                                            penalized the way Sharpe-based models do.
-                                                        </p>
+                                                                return (
+                                                                    <li
+                                                                        key={idx}
+                                                                        className={`bg-gray-100 ${isOpenRisk ? "rounded-2xl" : "rounded-full"} px-4 py-2.5`}
+                                                                    >
+                                                                        {/* QUESTION */}
+                                                                        <button
+                                                                            onClick={() =>
+                                                                                setOpenRiskIndex(isOpenRisk ? null : idx)
+                                                                            }
+                                                                            className="w-full flex items-start justify-between gap-3 text-left"
+                                                                        >
+                                                                            <div className={`flex ${isOpenRisk ? "items-start" : "items-center"}  gap-3`}>
+                                                                                <img
+                                                                                    src="assets/icons/icn-check.svg"
+                                                                                    alt=""
+                                                                                    className="w-5 h-5 mt-0.5"
+                                                                                />
+                                                                                <span className="font-medium text-xs md:text-sm text-text-secondary text-start">
+                                                                                    {item.question}
+                                                                                </span>
+                                                                            </div>
+
+                                                                            <svg
+                                                                                className={`w-4 h-4 mt-1 transition-transform ${isOpenRisk ? "rotate-180" : ""
+                                                                                    }`}
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="none"
+                                                                            >
+                                                                                <path
+                                                                                    d="M6 9l6 6 6-6"
+                                                                                    stroke="currentColor"
+                                                                                    strokeWidth="2"
+                                                                                    strokeLinecap="round"
+                                                                                    strokeLinejoin="round"
+                                                                                />
+                                                                            </svg>
+                                                                        </button>
+
+                                                                        {/* ANSWER */}
+                                                                        {isOpenRisk && (
+                                                                            <p className="mt-2.5 pt-2.5 text-xs md:text-sm text-text-secondary leading-5 border-t-2 border-[#EEEEEE]">
+                                                                                {item.answer}
+                                                                            </p>
+                                                                        )}
+                                                                    </li>
+                                                                );
+                                                            })}
+                                                        </ul>
                                                     </>
                                                 ) : (
+
                                                     /* DEFAULT LAYOUT FOR FAQ 1 & 2 */
                                                     <>
                                                         {faq.subtitle && (

@@ -5,25 +5,27 @@ const Hero = () => {
                 <div className="flex flex-col gap-8 md:gap-[60px] w-full max-w-[670px]">
                     <div className="flex flex-col gap-6 md:gap-8">
                         <div className="flex flex-col gap-4 md:gap-5">
-                            <h1 className="mb-0 text-[28px] md:text-[32px] lg:text-[48px] text-white font-semibold md:leading-[60px]">The intelligence layer for post-trade benchmarking.</h1>
-                            <span className="font-normal text-text-white text-[16px] lg:text-[18px] w-full max-w-[608px]">An AI intelligence layer on top of transactional data that transforms unstructured private-market information into institutional decision support.</span>
+                            <h1 className="mb-0 text-[28px] md:text-[32px] lg:text-[48px] text-white font-semibold md:leading-[60px]">The intelligence layer for Post-Trade Stack</h1>
+                            <span className="font-normal text-text-white text-[16px] lg:text-[18px] w-full max-w-[608px]">An AI-driven intelligence layer that standardizes private-market data into comparable benchmarks, supporting manager selection, appraisal, and consistent performance attribution across asset classes.</span>
                             <div className="flex flex-col gap-3.5">
                                 <div className="flex justify-start items-center gap-2.5">
-                                    <img src="assets/icons/alt-home-hero-icn-1.svg" alt="" className="w-5 h-5 md:w-auto md:h-auto" />
-                                    <span className="font-normal text-text-white text-[16px] lg:text-[18px] w-full">Tailored benchmarks for private markets</span>
+                                    <img src="assets/icons/alt-home-hero-icn-3.svg" alt="" className="w-5 h-5 md:w-auto md:h-auto" />
+                                    <span className="font-normal text-text-white text-[16px] lg:text-[18px] w-full">Performance & Risk benchmarking</span>
                                 </div>
                                 <div className="flex justify-start items-center gap-2.5">
                                     <img src="assets/icons/alt-home-hero-icn-2.svg" alt="" className="w-5 h-5 md:w-auto md:h-auto" />
-                                    <span className="font-normal text-text-white text-[16px] lg:text-[18px] w-full">Standardised Methodology using TruePeer™</span>
+                                    <span className="font-normal text-text-white text-[16px] lg:text-[18px] w-full">Standardized Methodology using TruePeer™</span>
                                 </div>
-                                <div className="flex justify-start items-center gap-2.5">
-                                    <img src="assets/icons/alt-home-hero-icn-3.svg" alt="" className="w-5 h-5 md:w-auto md:h-auto" />
-                                    <span className="font-normal text-text-white text-[16px] lg:text-[18px] w-full">Compare funds across asset classes.</span>
-                                </div>
+
                                 <div className="flex justify-start items-center gap-2.5">
                                     <img src="assets/icons/alt-home-hero-icn-4.svg" alt="" className="w-5 h-5 md:w-auto md:h-auto" />
                                     <span className="font-normal text-text-white text-[16px] lg:text-[18px] w-full">Bridging private and public market Taxonomy</span>
                                 </div>
+                                <div className="flex justify-start items-center gap-2.5">
+                                    <img src="assets/icons/alt-home-hero-icn-1.svg" alt="" className="w-5 h-5 md:w-auto md:h-auto" />
+                                    <span className="font-normal text-text-white text-[16px] lg:text-[18px] w-full">Bespoke matching for private-market products</span>
+                                </div>
+
                             </div>
                         </div>
                         <div className="flex flex-col md:flex-row justify-start items-center gap-3 md:gap-4">
@@ -43,11 +45,6 @@ const Hero = () => {
                 </div>
                 <div className="w-full max-w-[515px] flex flex-col gap-5">
                     <div className="flex flex-col gap-[5px] md:gap-[9px] w-full">
-                        {/* Section Title */}
-                        <span className="font-medium text-text-gray text-[11px] md:text-base lg:text-[18px] uppercase">
-                            Alt Asset Management
-                        </span>
-
                         {/* CARD 1 */}
                         <div className="bg-white/10 rounded-[5.88px] md:rounded-[9.26px] shadow-[0_20px_60px_rgba(0,0,0,0.15)] p-3.5 md:py-[17px] md:px-[22px] flex flex-row justify-between gap-0 md:gap-6">
                             {/* Left */}

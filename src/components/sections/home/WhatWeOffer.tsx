@@ -23,7 +23,7 @@ const faqs: FAQ[] = [
             {
                 text: "Who are Fund’s peers using our TruePeer™ methodology and why?",
                 regulationList: [
-                    "Peer groups are identified based on observed investing behavior rather than self-reported labels. Eg 2016–2019, North America, SaaS AI",
+                    "Peer groups are identified based on observed investing behavior rather than self-reported labels.",
                 ],
             },
             {
